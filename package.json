@@ -1,7 +1,14 @@
 {
-  "name": "psparwez-portfolio",
+  "name": "sahil-portfolio",
   "version": "0.1.0",
-  "private": true,
+  "author": "Sahil Bhanvadiya",
+  "description": "Portfolio website of Sahil Bhanvadiya, a full stack developer, problem solver, and tech enthusiast.",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahil-bhanvadiya/portfolio.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
