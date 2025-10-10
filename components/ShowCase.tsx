@@ -38,7 +38,7 @@ export default function ShowCase({ isMore = true, showData = 2 }: {
                                 <div className="flex items-start flex-1 flex-col flex-nowrap gap-4 h-min justify-start overflow-visible p-0 relative w-full">
                                     <div className="flex items-center flex-none flex-nowrap gap-5 h-min justify-between overflow-visible p-0 relative w-full">
 
-                                        <div className="flex-1 h-auto relative whitespace-pre-wrap break-words justify-start flex-shrink-0 flex-col ">
+                                        <div className="flex-1 h-auto relative whitespace-pre-wrap break-words justify-start shrink-0 flex-col ">
                                             <h3 className='font-bold text-white text-[22px] leading-[1.2em] '>{item.title}</h3>
 
                                         </div>
@@ -52,7 +52,7 @@ export default function ShowCase({ isMore = true, showData = 2 }: {
                                                     </figure>
                                                 </div>
 
-                                                <div className="flex-none h-auto relative whitespace-pre w-auto flex flex-col flex-shrink-0 opacity-70  group-hover:opacity-100 transition-all duration-500 ">
+                                                <div className="flex-none h-auto relative whitespace-pre w-auto flex flex-col shrink-0 opacity-70  group-hover:opacity-100 transition-all duration-500 ">
                                                     <p className='text-light-gray-3 font-medium  leading-[100%] text-[15px] '>
                                                         {item.link}
                                                     </p>
@@ -63,15 +63,15 @@ export default function ShowCase({ isMore = true, showData = 2 }: {
                                     </div>
 
                                     <div className="border-y border-dark-gray-3 flex flex-none gap-3 h-min justify-start overflow-visible px-0 py-3 relative w-full flex-nowrap items-center">
-                                        <div className="flex flex-col flex-shrink-0 flex-none h-auto whitespace-pre w-auto relative ">
+                                        <div className="flex flex-col shrink-0 flex-none h-auto whitespace-pre w-auto relative ">
                                             <p className='text-light-gray-2 text-[15px] font-medium '>{item.type}</p>
                                         </div>
                                         <div className="bg-medium-gray rounded-full h-[5px] aspect-square flex-none relative w-[5px] "></div>
-                                        <div className="flex flex-col flex-shrink-0 flex-none h-auto whitespace-pre w-auto relative ">
+                                        <div className="flex flex-col shrink-0 flex-none h-auto whitespace-pre w-auto relative ">
                                             <p className='text-light-gray-2 text-[15px] font-medium '>{item.pages} Pages</p>
                                         </div>
                                         <div className="bg-medium-gray rounded-full h-[5px] aspect-square flex-none relative w-[5px] "></div>
-                                        <div className="flex flex-col flex-shrink-0 flex-none h-auto whitespace-pre w-auto relative ">
+                                        <div className="flex flex-col shrink-0 flex-none h-auto whitespace-pre w-auto relative ">
                                             <p className='text-light-gray-2 text-[15px] font-medium '>{item.theme} Theme</p>
                                         </div>
                                     </div>
@@ -90,7 +90,7 @@ export default function ShowCase({ isMore = true, showData = 2 }: {
             {
                 isMore && <div className="flex-1 h-auto relative w-full block ">
                     <Link href={`/services`} className='bg-almost-black rounded-[10px] border border-dark-gray-4 w-full flex cursor-pointer gap-[6px] p-[14px_18px] flex-nowrap justify-center items-center overflow-visible h-min relative group hover:bg-dark-gray-4 transition-all duration-500'>
-                        <div className="flex flex-shrink-0 group-hover:opacity-100  transition-all duration-500 justify-start opacity-70 flex-none h-auto w-auto whitespace-pre relative ">
+                        <div className="flex shrink-0 group-hover:opacity-100  transition-all duration-500 justify-start opacity-70 flex-none h-auto w-auto whitespace-pre relative ">
                             <p className='uppercase font-medium font-IBM_Plex_Mono text-[15px] text-very-light-gray '>
                                 View All projects
                             </p>

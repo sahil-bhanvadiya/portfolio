@@ -36,7 +36,7 @@ const FAQ: React.FC<FAQProps> = ({ data }) => {
                         <div className="w-full">
                             <motion.div
                                 onClick={() => handleToggle(index)}
-                                className="cursor-pointer bg-very-dark-gray hover:bg-[#fff]/[0.03] duration-300 text-white p-6 border border-dark-gray-3 rounded-[14px] transition-all"
+                                className="cursor-pointer bg-very-dark-gray hover:bg-[#fff]/3 duration-300 text-white p-6 border border-dark-gray-3 rounded-[14px] transition-all"
                             >
                                 <div className="flex items-center gap-2 justify-between">
                                     <div className="flex flex-col">
@@ -50,7 +50,7 @@ const FAQ: React.FC<FAQProps> = ({ data }) => {
                                         </motion.p>
                                     </div>
                                     <motion.div
-                                        className="bg-dark-gray-2 flex-shrink-0 border border-dark-gray-4 rounded-[10px] flex items-center justify-center p-2"
+                                        className="bg-dark-gray-2 shrink-0 border border-dark-gray-4 rounded-[10px] flex items-center justify-center p-2"
                                         animate={{ rotate: openIndices.includes(index) ? 45 : 0 }}
                                     >
                                         <Image
@@ -79,7 +79,7 @@ const FAQ: React.FC<FAQProps> = ({ data }) => {
                                                 animate={{ opacity: 1 }}
                                                 exit={{ opacity: 0 }}
                                                 transition={{ duration: 0.2 }}
-                                                className="bg-dark-gray-3 w-full h-[1px] my-4"
+                                                className="bg-dark-gray-3 w-full h-px my-4"
                                             />
                                             <motion.p
                                                 initial={{ opacity: 0, y: 10 }}

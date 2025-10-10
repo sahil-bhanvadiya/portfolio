@@ -63,7 +63,7 @@ export default function Form() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div className="">
                             <input
-                                className={`appearance-none w-full leading-[1.4em] outline-none border-none p-4 rounded-lg font-medium text-base placeholder:text-light-gray-1 text-very-light-gray bg-dark-gray-2`}
+                                className={`appearance-none w-full leading-[1.4em] outline-hidden border-none p-4 rounded-lg font-medium text-base placeholder:text-light-gray-1 text-very-light-gray bg-dark-gray-2`}
                                 name="Name"
                                 placeholder="Name"
                                 type="text"
@@ -75,7 +75,7 @@ export default function Form() {
                         </div>
                         <div className="">
                             <input
-                                className="appearance-none w-full leading-[1.4em] outline-none border-none p-4 rounded-lg font-medium text-base placeholder:text-light-gray-1 text-very-light-gray bg-dark-gray-2"
+                                className="appearance-none w-full leading-[1.4em] outline-hidden border-none p-4 rounded-lg font-medium text-base placeholder:text-light-gray-1 text-very-light-gray bg-dark-gray-2"
                                 name="Email"
                                 placeholder="Email"
                                 type="email"
@@ -88,7 +88,7 @@ export default function Form() {
                     </div>
                     {/* Textarea */}
                     <textarea
-                        className="appearance-none w-full leading-[1.4em] outline-none border-none p-4 rounded-lg font-medium text-base placeholder:text-light-gray-1 text-very-light-gray bg-dark-gray-2 resize-y min-h-56 max-h-96"
+                        className="appearance-none w-full leading-[1.4em] outline-hidden border-none p-4 rounded-lg font-medium text-base placeholder:text-light-gray-1 text-very-light-gray bg-dark-gray-2 resize-y min-h-56 max-h-96"
                         name="Message"
                         placeholder="Message"
                         rows={8}

@@ -27,11 +27,11 @@ export default function CounterContainer() {
                                         <CountUp end={list.value} />
                                     </div>
                                 </div>
-                                <div className="flex flex-shrink-0 flex-col justify-start float-none h-auto relative whitespace-pre w-auto">
+                                <div className="flex shrink-0 flex-col justify-start float-none h-auto relative whitespace-pre w-auto">
                                     <h1 className='text-[34px] font-bold text-white '>+</h1>
                                 </div>
                             </div>
-                            <div className="flex flex-shrink-0 flex-col justify-start w-full flex-none relative whitespace-pre-wrap break-words">
+                            <div className="flex shrink-0 flex-col justify-start w-full flex-none relative whitespace-pre-wrap break-words">
                                 <p className=' text-center text-light-gray-2 font-medium text-[15px]  '>{list.title}</p>
                             </div>
 

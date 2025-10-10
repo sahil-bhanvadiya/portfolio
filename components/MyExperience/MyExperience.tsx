@@ -39,12 +39,12 @@ export default function MyExperience() {
                                         </div>
                                         <div className="flex float-none flex-nowrap items-start gap-[6px] h-min justify-center overflow-visible p-0 relative w-min ">
                                             <div className="gap-0 flex h-min justify-start overflow-visible items-start flex-col flex-nowrap">
-                                                <div className="flex-none h-auto relative whitespace-pre w-auto flex flex-col justify-start flex-shrink-0">
+                                                <div className="flex-none h-auto relative whitespace-pre w-auto flex flex-col justify-start shrink-0">
                                                     <p className='font-bold  text-[20px]  text-light-gray-4'>
                                                         {exp.company}
                                                     </p>
                                                 </div>
-                                                <div className="flex-none h-auto relative whitespace-pre w-auto flex flex-col justify-start flex-shrink-0">
+                                                <div className="flex-none h-auto relative whitespace-pre w-auto flex flex-col justify-start shrink-0">
                                                     <Link href={exp.link} className='font-medium cursor-pointer  text-[15px]  text-light-gray-2'>
                                                         {exp.link}
                                                     </Link>
@@ -52,7 +52,7 @@ export default function MyExperience() {
                                             </div>
 
                                             <div className="bg-dark-gray-2 border border-dark-gray-3 flex flex-none items-center justify-start flex-nowrap gap-[10px] h-min overflow-visible p-[4px_10px] relative w-min rounded-3xl ">
-                                                <div className="flex-none h-auto relative whitespace-pre w-auto flex flex-col justify-start flex-shrink-0">
+                                                <div className="flex-none h-auto relative whitespace-pre w-auto flex flex-col justify-start shrink-0">
                                                     <p className='font-medium text-xs sm:text-[14px]  text-light-gray-2'>
                                                         {exp.label}
                                                     </p>
@@ -70,12 +70,12 @@ export default function MyExperience() {
                                     </div>
                                 </div>
                                 <div className="border border-dark-gray-3 rounded-xl bg-darkest-gray flex flex-none flex-col flex-nowrap gap-1 h-min justify-start overflow-visible p-4 relative w-full">
-                                    <div className="flex flex-none flex-shrink-0 flex-col justify-start relative whitespace-pre-wrap w-full break-words">
+                                    <div className="flex flex-none shrink-0 flex-col justify-start relative whitespace-pre-wrap w-full break-words">
                                         <p className='text-light-gray-4 text-base font-bold'>
                                             {exp.title}
                                         </p>
                                     </div>
-                                    <div className="flex flex-none flex-shrink-0 flex-col justify-start relative whitespace-pre-wrap w-full break-words">
+                                    <div className="flex flex-none shrink-0 flex-col justify-start relative whitespace-pre-wrap w-full break-words">
                                         <p className='text-light-gray-2 text-[15px] text-base font-medium '>
                                             {exp.description}
                                         </p>

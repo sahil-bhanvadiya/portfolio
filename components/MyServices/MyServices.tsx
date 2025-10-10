@@ -43,7 +43,7 @@ export default function MyServices() {
                                             </div>
                                         </div>
 
-                                        <div className="flex-1 flex flex-col justify-start flex-shrink-0 h-auto relative whitespace-pre-wrap break-words">
+                                        <div className="flex-1 flex flex-col justify-start shrink-0 h-auto relative whitespace-pre-wrap break-words">
                                             <p className='font-bold text-[20px] text-white leading-[1.2em] '>{service.title}</p>
                                         </div>
 
@@ -55,7 +55,7 @@ export default function MyServices() {
 
                                     </div>
                                     {/* bottom */}
-                                    <div className="flex flex-none flex-shrink-0 flex-col justify-start h-auto relative whitespace-pre-wrap w-full break-words">
+                                    <div className="flex flex-none shrink-0 flex-col justify-start h-auto relative whitespace-pre-wrap w-full break-words">
                                         <p className='text-light-gray-2 text-[15px] font-medium '>{service.description}</p>
                                     </div>
                                 </Link>

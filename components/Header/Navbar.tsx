@@ -55,7 +55,7 @@ export default function Navbar() {
                 </div>
                 <button
                 onClick={toggleMenu}
-                className="h-11 w-11 rounded-full bg-almost-black hover:bg-dark-gray-4 border-dark-gray-4 transition-all duration-500 cursor-pointer md:hidden relative z-[2000] flex items-center justify-center">
+                className="h-11 w-11 rounded-full bg-almost-black hover:bg-dark-gray-4 border-dark-gray-4 transition-all duration-500 cursor-pointer md:hidden relative z-2000 flex items-center justify-center">
                     <span >
                       {
                         isMenuOpen? (

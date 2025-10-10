@@ -42,10 +42,10 @@ export default function MyStack() {
                                     </div>
                                     {/* text  */}
                                     <div className="flex items-start flex-1 flex-col flex-nowrap gap-0 h-min justify-start overflow-visible p-0 relative">
-                                        <div className="flex flex-col flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words">
+                                        <div className="flex flex-col shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words">
                                             <p className='text-light-gray-4 font-semibold text-[18px]  '>{stack.title}</p>
                                         </div>
-                                        <div className="flex flex-col flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words">
+                                        <div className="flex flex-col shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words">
                                             <p className='text-light-gray-2 font-medium text-[15px]  '>{stack.description}</p>
                                         </div>
 

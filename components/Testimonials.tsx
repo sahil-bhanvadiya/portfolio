@@ -40,7 +40,7 @@ export default function Testimonials() {
                                 </div>
 
                                 <div className="flex items-start flex-1 flex-col flex-nowrap gap-1 h-min justify-center overflow-visible p-0 relative  ">
-                                    <div className="flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words  ">
+                                    <div className="flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words  ">
                                         <p className='text-light-gray-4 font-bold  text-[18px]'>{testimonial.name}</p>
                                     </div>
                                     <div className="flex gap-[2px] flex-nowrap flex-none items-center h-min justify-start overflow-visible p-0 relative w-full ">
@@ -49,7 +49,7 @@ export default function Testimonials() {
                                                 <Image width={20} height={20} src={locationIcon} alt="star" className='block w-full h-full rounded-[inherit] object-cover object-center' />
                                             </figure>
                                         </div>
-                                        <div className="flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words  ">
+                                        <div className="flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words  ">
                                             <p className='text-light-gray-2 font-medium  text-[12px]'>{testimonial.location}</p>
                                         </div>
                                     </div>
@@ -68,7 +68,7 @@ export default function Testimonials() {
 
                             </div>
 
-                            <div className="flex flex-none h-auto relative whitespace-pre-wrap w- break-words flex-shrink-0 justify-start ">
+                            <div className="flex flex-none h-auto relative whitespace-pre-wrap w- break-words shrink-0 justify-start ">
                                 <p className='text-[15px] text-light-gray-2 font-medium '>{testimonial.description}</p>
                             </div>
 

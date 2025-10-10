@@ -29,7 +29,7 @@ export default function SectionHeading({ icon, title, description, children }: P
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: 0.15 }}
                     viewport={{ once: true }}
-                    className="flex-1 w-full h-auto relative whitespace-pre-wrap break-words flex-col justify-start flex-shrink-0">
+                    className="flex-1 w-full h-auto relative whitespace-pre-wrap break-words flex-col justify-start shrink-0">
                     <h2 className='font-bold text-[26px] text-white leading-[1.2em] '>
                         {title}
                     </h2>

@@ -37,7 +37,7 @@ export default function ScheduleButton({ icon, label }: ScheduleButtonProps) {
                 </div>
 
                 {/* Text */}
-                <div className="flex-none h-auto w-auto whitespace-pre opacity-70 flex-shrink-0 flex-col justify-start group-hover:opacity-100">
+                <div className="flex-none h-auto w-auto whitespace-pre opacity-70 shrink-0 flex-col justify-start group-hover:opacity-100">
                     <p className="text-very-light-gray uppercase font-medium font-IBM_Plex_Mono leading-[100%] text-[15px]">
                         {label}
                     </p>
