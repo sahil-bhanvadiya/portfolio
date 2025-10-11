@@ -36,11 +36,12 @@ export interface myExperienceTypes {
 }
 
 export interface myStackTypes {
-  id: number;
-  title: string;
-  description: string;
-  logo: string;
-  link: string;
+  key: string;
+  value: {
+    id: number;
+    title: string;
+    logo: string;
+  }[];
 }
 
 export interface myServicesTypes {
