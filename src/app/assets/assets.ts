@@ -1,10 +1,6 @@
 export const asanaIcon = "/asana.svg";
 export const briefcaseIconley = "/briefcase-icon.svg";
 export const calendarIcon = "/calendar.svg";
-export const client_1 = "/client-1.avif";
-export const client_2 = "/client-2.avif";
-export const client_3 = "/client-3.avif";
-export const client_4 = "/client-4.avif";
 export const discord = "/discord.svg";
 export const dribble = "/dribble.svg";
 export const emailIcon = "/email-icon.svg";

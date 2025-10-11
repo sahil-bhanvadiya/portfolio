@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUp, Mail } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 
 import Link from "next/link";
 import { sidebarLogo } from "@/app/assets/assets";

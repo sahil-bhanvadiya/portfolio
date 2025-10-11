@@ -1,4 +1,3 @@
-import { Mail, User, Zap } from "lucide-react";
 import {
   airtable,
   angular,
@@ -9,10 +8,6 @@ import {
   chrome,
   claude,
   clickup,
-  client_1,
-  client_2,
-  client_3,
-  client_4,
   confluence,
   css,
   cursor,
