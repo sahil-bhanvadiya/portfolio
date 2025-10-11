@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -109,7 +109,7 @@
   font-family: var(--font-Space_Grotesk);
 }
 html {
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
 }
 
 body {

@@ -1,24 +1,24 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import AvailableForWorkBtn from "../ui/AvailableForWorkBtn";
 import { Equal, X } from "lucide-react";
+import { useEffect, useState } from "react";
 import SideNavbar from "../SideNavbar/SideNavbar";
+import AvailableForWorkBtn from "../ui/AvailableForWorkBtn";
 
 export default function Navbar() {
   const [time, setTime] = useState<string>("");
 
-  const formatTime = (num: number): string => (num < 10 ? `0${num}` : `${num}`);
-
-  const convertTo12HourFormat = (
-    hh: number
-  ): { hh: number; period: string } => {
-    const period = hh >= 12 ? "PM" : "AM";
-    hh = hh % 12;
-    hh = hh ? hh : 12;
-    return { hh, period };
-  };
-
   useEffect(() => {
+    const formatTime = (num: number): string =>
+      num < 10 ? `0${num}` : `${num}`;
+
+    const convertTo12HourFormat = (
+      hh: number,
+    ): { hh: number; period: string } => {
+      const period = hh >= 12 ? "PM" : "AM";
+      hh = hh % 12;
+      hh = hh ? hh : 12;
+      return { hh, period };
+    };
     const updateTime = () => {
       const today = new Date();
       const hh = today.getHours();
@@ -27,7 +27,7 @@ export default function Navbar() {
       const { hh: formattedHH } = convertTo12HourFormat(hh);
 
       const formattedTime = `${formatTime(formattedHH)}:${formatTime(
-        mm
+        mm,
       )}:${formatTime(ss)}`;
       setTime(formattedTime);
     };
@@ -56,6 +56,7 @@ export default function Navbar() {
             </div>
           </div>
           <button
+            type="button"
             onClick={toggleMenu}
             className="h-11 w-11 rounded-full bg-almost-black hover:bg-dark-gray-4 border-dark-gray-4 transition-all duration-500 cursor-pointer md:hidden relative z-2000 flex items-center justify-center"
           >
@@ -71,6 +72,8 @@ export default function Navbar() {
       </nav>
       {/* SideNavbar for mobile*/}
       {isMenuOpen && (
+        // biome-ignore lint/a11y/noStaticElementInteractions: /
+        // biome-ignore lint/a11y/useKeyWithClickEvents: /
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-10"
           onClick={toggleMenu}

@@ -1,13 +1,12 @@
 "use client";
-import { AvatarMe, calendarIcon, handGif } from "@/app/assets/assets";
-import Image from "next/image";
-import React from "react";
-import { Mail } from "lucide-react";
-import Button from "../ui/Button";
 
 import { motion } from "framer-motion";
+import { Mail } from "lucide-react";
+import Image from "next/image";
+import { AvatarMe, calendarIcon, handGif } from "@/app/assets/assets";
 import Brandcontainer from "../Brandcontainer/Brandcontainer";
 import CounterContainer from "../CounterContainer/CounterContainer";
+import Button from "../ui/Button";
 import ScheduleButton from "../ui/ScheduleButton";
 
 export default function Hero() {
@@ -16,7 +15,7 @@ export default function Hero() {
     const subject = "Schedule a Call";
     const body = "Hi, I'd like to schedule a call.";
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
-      subject
+      subject,
     )}&body=${encodeURIComponent(body)}`;
     window.open(mailtoLink, "_blank");
   };
