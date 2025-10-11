@@ -8,7 +8,7 @@ export interface pagesListsType {
 export interface socialListsTypes {
   id: number;
   title: string;
-  icon: React.ReactNode;
+  icon: string;
   link: string;
 }
 

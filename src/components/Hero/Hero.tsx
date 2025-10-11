@@ -32,7 +32,7 @@ export default function Hero() {
                 alt="Avatar"
                 width={300}
                 height={300}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-2xl"
               />
             </figure>
           </div>
@@ -82,7 +82,7 @@ export default function Hero() {
               viewport={{ once: true }}
               className="text-4xl leading-[1.2em] font-bold text-white"
             >
-              Pragadesh V
+              Sahil Bhanvadiya
             </motion.h1>
           </div>
 
@@ -101,8 +101,9 @@ export default function Hero() {
             viewport={{ once: true }}
             className="text-[18px] text-light-gray-2 font-medium leading-[150%] mb-4"
           >
-            Experienced web developer from Kerala, India, with a passion for
-            crafting seamless digital experiences and a proven track record.
+            Full-stack developer with a passion for building scalable,
+            high-performance web applications and creating seamless user
+            experiences.
           </motion.p>
 
           <motion.div
@@ -126,8 +127,6 @@ export default function Hero() {
               icon={<Mail size={18} />}
               title="Email Me"
             />
-            {/* <Button position='left' icon={<Calendar1 size={18} />} 
-                        title='Schedule Call' /> */}
             <ScheduleButton icon={calendarIcon} label="Schedule call" />
           </motion.div>
         </div>

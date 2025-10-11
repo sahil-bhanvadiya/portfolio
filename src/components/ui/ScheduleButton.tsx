@@ -19,7 +19,7 @@ export default function ScheduleButton({ icon, label }: ScheduleButtonProps) {
     <button
       type="button"
       data-cal-namespace="15min"
-      data-cal-link="psparwez/15min"
+      data-cal-link="sahil-bhanvadiya/15min"
       data-cal-config='{"layout":"month_view"}'
       className="bg-almost-black hover:bg-dark-gray-4 transition-all duration-300 rounded-[10px] border border-dark-gray-4 w-full flex gap-2 cursor-pointer items-center group justify-center p-[14px_18px] relative group"
     >

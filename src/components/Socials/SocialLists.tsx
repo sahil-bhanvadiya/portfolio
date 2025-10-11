@@ -32,7 +32,12 @@ export default function SocialLists() {
                   className="bg-very-dark-gray hover:bg-dark-gray-3 transition-all duration-300 border border-dark-gray-3 p-3 group rounded-xl"
                 >
                   <span className="text-light-gray-1 text-sm group-hover:text-light-gray-3 transition-all duration-300">
-                    {social.icon}
+                    <img
+                      src={social.icon}
+                      alt={social.title}
+                      height={22}
+                      width={22}
+                    />
                   </span>
                 </Link>
               </motion.li>

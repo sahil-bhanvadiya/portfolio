@@ -22,9 +22,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PS Parwez • Portfolio",
+  title: "Sahil Bhanvadiya Portfolio",
   description:
-    "PS Parwez's personal portfolio showcasing projects, skills, and experience.",
+    "I'm Sahil Bhanvadiya, a passionate Full Stack Developer specializing in crafting dynamic and scalable web applications. Explore my portfolio to see how I blend creativity with technology to deliver exceptional digital experiences.",
 };
 
 export default function RootLayout({
@@ -33,19 +33,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
+    <html lang="en" data-theme="dark" style={{ colorScheme: "dark" }}>
       <body
         className={`${spaceGrotesk.variable} ${ibmPlexMono.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="data-theme"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="data-theme" defaultTheme="dark">
           <div className="flex items-start w-full">
             <SideNavbar />
             <div className="w-full lg:flex-1">
