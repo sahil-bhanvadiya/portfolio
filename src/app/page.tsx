@@ -1,8 +1,10 @@
+import ContactForm from "@/components/ContactForm/ContactForm";
+import FAQ from "@/components/FAQ/FAQ";
 import Hero from "@/components/Hero/Hero";
 import MyExperience from "@/components/MyExperience/MyExperience";
-import MyServices from "@/components/MyServices/MyServices";
+// import MyServices from "@/components/MyServices/MyServices";
 import MyStack from "@/components/MyStack/MyStack";
-import ShowCase from "@/components/ShowCase";
+// import ShowCase from "@/components/ShowCase";
 import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
@@ -12,9 +14,12 @@ export default function Home() {
         <Hero />
         <MyExperience />
         <MyStack />
-        <MyServices />
-        <ShowCase showData={2} isMore />
+        {/* TODO: WIP */}
+        {/* <MyServices /> */}
+        {/* <ShowCase showData={2} isMore /> */}
         <Testimonials />
+        <ContactForm />
+        <FAQ />
       </div>
     </div>
   );

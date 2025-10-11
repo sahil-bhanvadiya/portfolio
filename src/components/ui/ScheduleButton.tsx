@@ -1,21 +1,36 @@
 "use client";
 import { getCalApi } from "@calcom/embed-react";
-
+import { Calendar } from "lucide-react";
 import { useEffect } from "react";
+import { calendarIcon } from "@/app/assets/assets";
+import Tooltip from "./Tooltop";
 
-interface ScheduleButtonProps {
-  icon: string;
-  label: string;
-}
-
-export default function ScheduleButton({ icon, label }: ScheduleButtonProps) {
+export default function ScheduleButton({
+  isForSidebar = false,
+}: {
+  isForSidebar?: boolean;
+}) {
   useEffect(() => {
     (async () => {
       const cal = await getCalApi({ namespace: "15min" });
       cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
     })();
   }, []);
-  return (
+  return isForSidebar ? (
+    <button
+      type="button"
+      data-cal-namespace="15min"
+      data-cal-link="sahil-bhanvadiya/15min"
+      data-cal-config='{"layout":"month_view"}'
+      className={`p-3.5 group flex cursor-pointer border items-center justify-center transition-all duration-300 h-min w-min  relative rounded-xl hover:bg-very-dark-gray hover:border-dark-gray-3 bg-almost-black border-dark-gray-3 text-white`}
+    >
+      <span className="text-light-gray-3">
+        <Calendar size={18} />
+      </span>
+
+      <Tooltip content="Schedule Meeting" position="right" />
+    </button>
+  ) : (
     <button
       type="button"
       data-cal-namespace="15min"
@@ -28,7 +43,7 @@ export default function ScheduleButton({ icon, label }: ScheduleButtonProps) {
         <div className="aspect-square opacity-70 group-hover:opacity-100 transition-all duration-500 relative h-5 w-5 overflow-hidden">
           <figure className="absolute inset-0 h-full w-full rounded-[inherit]">
             <img
-              src={icon}
+              src={calendarIcon}
               alt="calendarIcon"
               className="block w-full h-full object-cover object-center"
               width={20}
@@ -40,7 +55,7 @@ export default function ScheduleButton({ icon, label }: ScheduleButtonProps) {
         {/* Text */}
         <div className="flex-none h-auto w-auto whitespace-pre opacity-70 shrink-0 flex-col justify-start group-hover:opacity-100">
           <p className="text-very-light-gray uppercase font-medium font-IBM_Plex_Mono leading-[100%] text-[15px]">
-            {label}
+            Schedule call
           </p>
         </div>
       </div>

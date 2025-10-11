@@ -19,7 +19,6 @@ import {
   discord,
   docker,
   dribble,
-  dribbleIcon,
   expressjs,
   facebook,
   figmaIcon,
@@ -73,43 +72,18 @@ import {
   vscode,
   webDesignIcon,
   webDevIcon,
-  XLogo,
 } from "@/app/assets/assets";
 import type {
   counterListsType,
   FAQ,
-  FollowerData,
   myExperienceTypes,
-  myServicesPlansTypes,
   myServicesTypes,
   myShowCasesTypes,
   myStackTypes,
-  pagesListsType,
   socialBrandsTypes,
   socialListsTypes,
   testimonialsTypes,
 } from "@/types";
-
-export const pagesLists: pagesListsType[] = [
-  {
-    id: 1,
-    title: "Home",
-    href: "/",
-    icon: <User />,
-  },
-  {
-    id: 2,
-    title: "Services",
-    href: "/services",
-    icon: <Zap />,
-  },
-  {
-    id: 3,
-    title: "Contact",
-    href: "/contact",
-    icon: <Mail />,
-  },
-];
 
 export const socialLists: socialListsTypes[] = [
   {
@@ -412,82 +386,45 @@ export const myShowCases: myShowCasesTypes[] = [
 export const testimonials: testimonialsTypes[] = [
   {
     id: 1,
-    name: "Sarah Thompson",
+    name: "Sibtain J.",
     description:
-      "I am thrilled with the website for my business. His ability to translate my vision into a visually stunning...",
-    location: "New York City, USA.",
-    avatar: client_1,
+      "Impressive work by Sahil in building our MVP. He combined solid technical skills with a clear understanding of our business needs, ensuring a smooth and fast development process from concept to delivery.",
+    location: "San Francisco, USA.",
   },
   {
     id: 2,
-    name: "John Anderson",
+    name: "Divyam A.",
     description:
-      "Working with Pragadesh was a game-changer for my online business. His web design skills are exceptional.",
-    location: "Sydney, Australia.",
-    avatar: client_2,
+      "Excellent work! Sahil built my AI chatbot efficiently and delivered beyond expectations. Highly recommend for any AI or web development projects. The project was completed on time and within budget.",
+    location: "Ahmedabad, India.",
   },
   {
     id: 3,
-    name: "Mark Davis",
+    name: "Happy P.",
     description:
-      "Pragadesh’s creativity and technical expertise transformed our website into a visually stunning platform.",
-    location: "London, UK.",
-    avatar: client_3,
+      "Excellent DevOps work by Sahil. He configured AWS ECS deployments and implemented robust CI/CD pipelines for three separate repositories, ensuring smooth and automated deployments. Highly efficient and well-documented setup.",
+    location: "Brampton, Canada.",
   },
   {
     id: 4,
-    name: "Laura Adams",
+    name: "Toru T.",
     description:
-      "Pragadesh is a artist when it comes to website. He transformed my outdated website into a modern masterpiece.",
-    location: "Madrid, Spain.",
-    avatar: client_4,
-  },
-];
-
-export const myServicesPlans: myServicesPlansTypes[] = [
-  {
-    id: 1,
-    service: "Web Design",
-    price: "$50",
-    description:
-      "Crafting visually captivating and user-friendly websites for online success.",
-    completedWorks: "25+",
-    experience: "5+",
-    totalHoursWorked: "500 hours",
-    icon: webDesignIcon,
+      "Sahil is exceptional at transforming vision into reality. He successfully converted our Figma designs into fully functional Next.js code. He's highly skilled, responsive, and cooperative, making him the ideal support for any project.",
+    location: "Tokyo, Japan.",
   },
   {
-    id: 2,
-    service: "Web Dev",
-    price: "$60",
+    id: 5,
+    name: "Sid S.",
     description:
-      "Bringing ideas to life with robust and scalable web solutions.",
-    completedWorks: "30+",
-    experience: "6+",
-    totalHoursWorked: "420 hours",
-    icon: webDevIcon,
+      "Sahil did an outstanding job developing the backend for our social media platform. He built a robust architecture, implemented secure payment integration, and ensured the system performs smoothly under load. Excellent work!",
+    location: "Dubai, UAE.",
   },
   {
-    id: 3,
-    service: "Graphic Design",
-    price: "$40",
+    id: 6,
+    name: "Saurabh B.",
     description:
-      "Creating visually stunning designs that captivate and engage audiences.",
-    completedWorks: "40+",
-    experience: "8+",
-    totalHoursWorked: "328 hours",
-    icon: graphicDesignIcon,
-  },
-  {
-    id: 4,
-    service: "SEO",
-    price: "$70",
-    description:
-      "Elevating online visibility and driving organic traffic through strategies.",
-    completedWorks: "20+",
-    experience: "4+",
-    totalHoursWorked: "223 hours",
-    icon: seoOptIcon,
+      "Sahil is a great developer. He has a great attitude. He commits and sticks to the timeline. He is co-operative and goes the extra mile to make the product better. His role was very crucial in taking my product to the next level. I highly recommend anyone to work with him.",
+    location: "Mumbai, India.",
   },
 ];
 
@@ -531,32 +468,5 @@ export const faqData: FAQ[] = [
     question: "What are your payment terms?",
     answer:
       "Payment terms may vary depending on the project scope and duration. Generally, I request an initial deposit before commencing work.",
-  },
-];
-
-export const followerData: FollowerData[] = [
-  {
-    platform: "twitter",
-    followers: "12.6K",
-    url: "https://twitter.com/",
-    icon: XLogo,
-  },
-  {
-    platform: "Instagram",
-    followers: "8.3K",
-    url: "https://www.instagram.com/",
-    icon: instagramIcon,
-  },
-  {
-    platform: "LinkedIn",
-    followers: "2.5K",
-    url: "https://www.linkedin.com/",
-    icon: linkedInIcon,
-  },
-  {
-    platform: "Dribbble",
-    followers: "3.2K",
-    url: "https://dribbble.com/",
-    icon: dribbleIcon,
   },
 ];

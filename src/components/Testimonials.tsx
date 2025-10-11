@@ -1,8 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-
-import Link from "next/link";
-import { locationIcon, starLig, XLogo } from "@/app/assets/assets";
+import { User } from "lucide-react";
+import { locationIcon, starLig } from "@/app/assets/assets";
 import { testimonials } from "@/data";
 import SectionHeading from "./SectionHeading";
 
@@ -32,22 +31,12 @@ export default function Testimonials() {
             <div className="border bg-very-dark-gray border-dark-gray-3 rounded-xl flex flex-col gap-5 h-min justify-start items-start flex-nowrap overflow-visible p-5 relative ">
               <div className="flex flex-none flex-nowrap gap-2 h-min justify-start overflow-visible p-0 relative w-full ">
                 <div className="border border-border-color bg-dark-gray-3 rounded-lg aspect-square flex flex-none items-center flex-nowrap gap-1 h-auto justify-center overflow-hidden p-0 relative w-[50px] ">
-                  <div className="flex-1 w-full overflow-visible relative ">
-                    <figure className="relative w-full h-full inset-0 rounded-[inherit] ">
-                      <img
-                        width={50}
-                        height={50}
-                        src={testimonial.avatar}
-                        alt="Avatar"
-                        className="block w-full h-full rounded-[inherit] object-cover object-center"
-                      />
-                    </figure>
-                  </div>
+                  <User size={36} className="text-light-gray-4" />
                 </div>
 
                 <div className="flex items-start flex-1 flex-col flex-nowrap gap-1 h-min justify-center overflow-visible p-0 relative  ">
-                  <div className="flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words  ">
-                    <p className="text-light-gray-4 font-bold  text-[18px]">
+                  <div className="flex flex-col justify-start shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words ml-1 ">
+                    <p className="text-light-gray-4 font-bold text-[18px]">
                       {testimonial.name}
                     </p>
                   </div>
@@ -69,25 +58,6 @@ export default function Testimonials() {
                       </p>
                     </div>
                   </div>
-                </div>
-
-                <div className="flex-none h-auto relative w-auto  ">
-                  <Link
-                    href={`https://x.com`}
-                    className="bg-almost-black border border-dark-gray-3 rounded-[10px] cursor-pointer gap-[10px] flex items-center flex-col justify-end overflow-visible flex-nowrap h-min relative w-min custom-padding group hover:bg-dark-gray-4 transition-all duration-500 "
-                  >
-                    <div className="opacity-70 aspect-square h-auto overflow-visible relative w-5 transition-all group-hover:opacity-100 duration-500">
-                      <figure className="relative inset-0 rounded-[inherit] ">
-                        <img
-                          width={20}
-                          height={20}
-                          src={XLogo}
-                          alt="star"
-                          className="block w-full h-full rounded-[inherit] object-cover object-center"
-                        />
-                      </figure>
-                    </div>
-                  </Link>
                 </div>
               </div>
 

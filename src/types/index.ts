@@ -1,10 +1,3 @@
-export interface pagesListsType {
-  id: number;
-  title: string;
-  href: string;
-  icon: React.ReactNode;
-}
-
 export interface socialListsTypes {
   id: number;
   title: string;
@@ -67,28 +60,9 @@ export interface testimonialsTypes {
   name: string;
   description: string;
   location: string;
-  avatar: string;
-}
-
-export interface myServicesPlansTypes {
-  id: number;
-  service: string;
-  price: string;
-  description: string;
-  completedWorks: string;
-  experience: string;
-  totalHoursWorked: string;
-  icon: string;
 }
 
 export type FAQ = {
   question: string;
   answer: string;
 };
-
-export interface FollowerData {
-  platform: string;
-  followers: string;
-  url: string;
-  icon: string;
-}

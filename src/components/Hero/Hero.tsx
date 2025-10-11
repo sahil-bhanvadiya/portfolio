@@ -1,25 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail } from "lucide-react";
-
-import { AvatarMe, calendarIcon, handGif } from "@/app/assets/assets";
+import { AvatarMe, handGif } from "@/app/assets/assets";
 import Brandcontainer from "../Brandcontainer/Brandcontainer";
 import CounterContainer from "../CounterContainer/CounterContainer";
-import Button from "../ui/Button";
+import EmailMeButton from "../EmailMeButton";
 import ScheduleButton from "../ui/ScheduleButton";
 
 export default function Hero() {
-  const handleClick = () => {
-    const email = "sahil.bhanvadiya.dev@gmail.com";
-    const subject = "Schedule a Call";
-    const body = "Hi, I'd like to schedule a call.";
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(body)}`;
-    window.open(mailtoLink, "_blank");
-  };
-
   return (
     <div className="flex flex-none flex-col flex-nowrap gap-[30px] h-min justify-start overflow-visible p-0 relative w-full ">
       {/* top  */}
@@ -121,13 +109,8 @@ export default function Hero() {
             viewport={{ once: true }}
             className="flex  items-start flex-none flex-nowrap  w-full gap-5 h-min justify-start p-0 relative"
           >
-            <Button
-              onClick={handleClick}
-              position="left"
-              icon={<Mail size={18} />}
-              title="Email Me"
-            />
-            <ScheduleButton icon={calendarIcon} label="Schedule call" />
+            <EmailMeButton />
+            <ScheduleButton />
           </motion.div>
         </div>
       </section>

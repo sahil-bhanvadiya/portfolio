@@ -6,7 +6,6 @@ import { myStack } from "@/data";
 import SectionHeading from "../SectionHeading";
 
 export default function MyStack() {
-  console.log(myStack);
   return (
     <div className="flex items-start flex-none flex-col flex-nowrap gap-[30px] h-min justify-start overflow-visible relative w-full ">
       <div className="flex-none h-auto relative w-full">

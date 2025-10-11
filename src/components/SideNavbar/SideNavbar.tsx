@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, Mail } from "lucide-react";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { sidebarLogo } from "@/app/assets/assets";
-import { pagesLists } from "@/data";
+import EmailMeButton from "../EmailMeButton";
+import ScheduleButton from "../ui/ScheduleButton";
 import Tooltip from "../ui/Tooltop";
 
 interface SideNavbarProps {
@@ -14,8 +14,6 @@ interface SideNavbarProps {
 }
 
 export default function SideNavbar({ isMenuOpen }: SideNavbarProps) {
-  const pathname = usePathname();
-
   return (
     <motion.div
       initial={{ x: "-100%" }}
@@ -50,37 +48,18 @@ export default function SideNavbar({ isMenuOpen }: SideNavbarProps) {
           whileInView={{ opacity: 1 }}
           className="flex flex-col flex-none flex-nowrap gap-[20px] h-min justify-start p-0 relative w-min z-10 items-start"
         >
-          {pagesLists.map((page, index) => {
-            const isActive = pathname === page.href;
-            return (
-              <motion.li
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                viewport={{
-                  once: true,
-                }}
-                key={page.id}
-              >
-                <Link
-                  href={page.href}
-                  className={`p-3.5 group flex cursor-pointer border border-transparent items-center justify-center transition-all duration-300 h-min w-min  relative rounded-xl ${
-                    isActive
-                      ? "bg-almost-black border-dark-gray-3 text-white"
-                      : "hover:bg-very-dark-gray hover:border-dark-gray-3"
-                  }`}
-                >
-                  <span
-                    className={` ${isActive ? "text-light-gray-3" : "text-light-gray-2"} `}
-                  >
-                    {page.icon}
-                  </span>
-
-                  <Tooltip content={page.title} position="right" />
-                </Link>
-              </motion.li>
-            );
-          })}
+          <motion.li
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{
+              once: true,
+            }}
+          >
+            <EmailMeButton isForSidebar />
+            <br />
+            <ScheduleButton isForSidebar />
+          </motion.li>
         </motion.ul>
         {/* bottom */}
         <motion.div
