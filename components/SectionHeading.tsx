@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import type React from "react";
 
 interface Props {
@@ -27,7 +27,7 @@ export default function SectionHeading({
           className="aspect-auto w-[30px] flex-none overflow-hidden relative"
         >
           <figure className="relative text-white top-0 left-0 right-0 bottom-0 rounded-[inherit]">
-            <Image
+            <img
               width={30}
               height={30}
               src={icon}

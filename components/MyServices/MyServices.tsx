@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import Link from "next/link";
 import { rightArrow, zapIcon } from "@/app/assets/assets";
 import { myServices } from "@/data";
@@ -42,7 +42,7 @@ export default function MyServices() {
                   <div className="flex flex-none items-center flex-nowrap gap-[10px] h-min justify-center overflow-hidden p-2 relative w-min border border-border-color bg-dark-gray-3 rounded-lg ">
                     <div className="aspect-square flex-none h-auto overflow-hidden relative w-[30px]  ">
                       <figure className="absolute inset-0 rounded-[inherit] w-full h-full ">
-                        <Image
+                        <img
                           width={30}
                           height={30}
                           src={service.icon}
@@ -61,7 +61,7 @@ export default function MyServices() {
 
                   <div className="aspect-square h-auto flex-none overflow-hidden relative w-[30px] transition-all duration-500 opacity-0 group-hover:opacity-100 ">
                     <figure className="absolute top-0 left-0 right-0 bottom-0 rounded-[inherit]">
-                      <Image
+                      <img
                         width={20}
                         height={20}
                         src={rightArrow}

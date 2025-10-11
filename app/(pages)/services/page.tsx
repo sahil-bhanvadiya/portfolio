@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import type React from "react";
 import { calendarIcon, zapIcon } from "@/app/assets/assets";
 import MyStack from "@/components/MyStack/MyStack";
@@ -41,7 +40,7 @@ export default function SearvicesPage() {
                     <div className="flex items-center gap-2 flex-1">
                       <div className="bg-dark-gray-3 border border-border-color rounded-lg flex items-center justify-center p-2 w-auto">
                         <div className="aspect-square w-[24px] h-[24px] overflow-hidden">
-                          <Image
+                          <img
                             width={24}
                             height={24}
                             src={plan.icon}

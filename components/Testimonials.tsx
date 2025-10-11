@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import Link from "next/link";
 import { locationIcon, starLig, XLogo } from "@/app/assets/assets";
 import { testimonials } from "@/data";
@@ -34,7 +34,7 @@ export default function Testimonials() {
                 <div className="border border-border-color bg-dark-gray-3 rounded-lg aspect-square flex flex-none items-center flex-nowrap gap-1 h-auto justify-center overflow-hidden p-0 relative w-[50px] ">
                   <div className="flex-1 w-full overflow-visible relative ">
                     <figure className="relative w-full h-full inset-0 rounded-[inherit] ">
-                      <Image
+                      <img
                         width={50}
                         height={50}
                         src={testimonial.avatar}
@@ -54,7 +54,7 @@ export default function Testimonials() {
                   <div className="flex gap-[2px] flex-nowrap flex-none items-center h-min justify-start overflow-visible p-0 relative w-full ">
                     <div className="aspect-square h-auto w-5 overflow-visible relative flex-none  ">
                       <figure className="relative w-full h-full inset-0 rounded-[inherit] ">
-                        <Image
+                        <img
                           width={20}
                           height={20}
                           src={locationIcon}
@@ -78,7 +78,7 @@ export default function Testimonials() {
                   >
                     <div className="opacity-70 aspect-square h-auto overflow-visible relative w-5 transition-all group-hover:opacity-100 duration-500">
                       <figure className="relative inset-0 rounded-[inherit] ">
-                        <Image
+                        <img
                           width={20}
                           height={20}
                           src={XLogo}

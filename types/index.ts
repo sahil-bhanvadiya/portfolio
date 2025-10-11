@@ -1,5 +1,3 @@
-import type { StaticImageData } from "next/image";
-
 export interface pagesListsType {
   id: number;
   title: string;
@@ -61,7 +59,7 @@ export interface myShowCasesTypes {
   type: string;
   theme: string;
   pages: number;
-  image: StaticImageData | string;
+  image: string;
 }
 
 export interface testimonialsTypes {
@@ -69,7 +67,7 @@ export interface testimonialsTypes {
   name: string;
   description: string;
   location: string;
-  avatar: StaticImageData | string;
+  avatar: string;
 }
 
 export interface myServicesPlansTypes {

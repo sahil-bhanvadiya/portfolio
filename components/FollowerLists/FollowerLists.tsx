@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import Link from "next/link";
 import { itemVariants, listVariants } from "@/animation/varients";
 import type { FollowerData } from "@/types";
@@ -30,7 +30,7 @@ export default function FollowerLists({
             >
               {/* Icon */}
               <div className="w-12 h-12 bg-dark-gray-4 border border-border-color rounded-lg flex items-center justify-center">
-                <Image
+                <img
                   src={data.icon || "/placeholder.svg"}
                   alt={data.platform}
                   width={30}
@@ -49,7 +49,7 @@ export default function FollowerLists({
               </div>
               {/* Right Arrow */}
               <div className="ml-auto w-6 h-6 opacity-50 group-hover:opacity-100 transition-all">
-                <Image
+                <img
                   src={rightArrow || "/placeholder.svg"}
                   alt="Right Arrow"
                   width={24}

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import Link from "next/link";
 import { rightArrow, stackIcon } from "@/app/assets/assets";
 import { myStack } from "@/data";
@@ -41,9 +41,11 @@ export default function MyStack() {
                 <div className="bg-dark-gray-4 border border-border-color rounded-[7px] flex items-center flex-none flex-nowrap gap-[10px] h-min justify-center overflow-hidden p-2 relative w-min  ">
                   <div className="aspect-square flex-none h-auto overflow-hidden relative w-[30px]  ">
                     <figure className="relative inset-0 rounded-[inherit]  ">
-                      <Image
+                      <img
                         src={stack.logo}
                         alt={stack.title}
+                        width={30}
+                        height={30}
                         className="block w-full h-full rounded-[inherit] object-cover object-center "
                       />
                     </figure>
@@ -65,7 +67,7 @@ export default function MyStack() {
                 {/* arrow  */}
                 <div className="aspect-square flex-none h-auto w-[24px] overflow-hidden relative opacity-50 group-hover:opacity-100 ">
                   <div className="absolute rounded-full inset-0 flex items-center justify-center w-full h-full">
-                    <Image
+                    <img
                       src={rightArrow}
                       alt="arrow"
                       width={24}

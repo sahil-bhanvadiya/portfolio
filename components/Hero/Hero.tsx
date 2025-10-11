@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
-import Image from "next/image";
+
 import { AvatarMe, calendarIcon, handGif } from "@/app/assets/assets";
 import Brandcontainer from "../Brandcontainer/Brandcontainer";
 import CounterContainer from "../CounterContainer/CounterContainer";
@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="flex items-start w-full md:items-center flex-none flex-nowrap flex-col gap-[10px] h-min justify-center p-0 relative md:w-min overflow-hidden">
           <div className="aspect-auto flex-none h-auto w-[260px] relative bg-image-bg rounded-lg">
             <figure className="h-full w-full">
-              <Image
+              <img
                 src={AvatarMe}
                 alt="Avatar"
                 width={300}
@@ -55,7 +55,7 @@ export default function Hero() {
               className="flex items-center gap-1"
             >
               <span>
-                <Image
+                <img
                   src={handGif}
                   className="waveHand"
                   alt="Hand Gesture"

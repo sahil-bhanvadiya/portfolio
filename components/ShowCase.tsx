@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import Link from "next/link";
 import { flyIcon, linkIcon, rightArrow } from "@/app/assets/assets";
 import { myShowCases } from "@/data";
@@ -38,7 +38,7 @@ export default function ShowCase({
             <div className="bg-very-dark-gray w-full border border-dark-gray-3 rounded-xl flex items-center flex-nowrap flex-col lg:flex-row  gap-5 h-min justify-start overflow-visible p-4 lg:p-[8px_24px_8px_8px] relative ">
               <div className="lg:flex-1 w-full rounded-xl h-[180px] relative ">
                 <figure className="lg:absolute relative h-full w-full inset-0 rounded-xl ">
-                  <Image
+                  <img
                     src={item.image}
                     className="w-full block h-full rounded-[inherit] object-cover object-center "
                     height={180}
@@ -65,7 +65,7 @@ export default function ShowCase({
                       >
                         <div className="opacity-70 aspect-square h-auto overflow-visible w-5 relative flex-none group-hover:opacity-100 duration-500 transition-all">
                           <figure className="absolute inset-0 w-full h-full rounded-[inherit] ">
-                            <Image
+                            <img
                               src={linkIcon}
                               alt="Link icon"
                               className="block w-full h-full object-cover object-center rounded-[inherit] "
@@ -128,7 +128,7 @@ export default function ShowCase({
             </div>
             <div className="aspect-square flex-none h-auto relative overflow-hidden w-5 transition-all group-hover:opacity-100 duration-500  opacity-70">
               <figure className="absolute inset-0 rounded-[inherit] ">
-                <Image
+                <img
                   src={rightArrow}
                   alt="Right arrow icon"
                   className="block w-full h-full object-cover object-center rounded-[inherit]  -rotate-45"

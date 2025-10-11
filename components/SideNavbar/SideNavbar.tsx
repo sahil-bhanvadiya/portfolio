@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowUp } from "lucide-react";
-import Image from "next/image";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AvatarMe } from "@/app/assets/assets";
@@ -36,10 +36,8 @@ export default function SideNavbar({ isMenuOpen }: SideNavbarProps) {
         >
           <div className="w-[50px] aspect-square h-auto rounded-full flex-none relative bg-darkest-gray">
             <div className="absolute rounded-full inset-0">
-              <Image
+              <img
                 src={AvatarMe}
-                fill
-                quality={100}
                 alt="Avatar"
                 className="block w-full h-full rounded-full opacity-80 object-fill object-center"
               />

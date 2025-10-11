@@ -1,6 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
+
 import type React from "react";
 import { useState } from "react";
 import { multiplyIcon } from "@/app/assets/assets";
@@ -57,7 +57,7 @@ const FAQ: React.FC<FAQProps> = ({ data }) => {
                     className="bg-dark-gray-2 shrink-0 border border-dark-gray-4 rounded-[10px] flex items-center justify-center p-2"
                     animate={{ rotate: openIndices.includes(index) ? 45 : 0 }}
                   >
-                    <Image
+                    <img
                       src={multiplyIcon || "/placeholder.svg"}
                       alt="toggle icon"
                       className="transition-opacity rotate-45 duration-500"

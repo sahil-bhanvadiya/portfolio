@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import { socialBrands } from "@/data/index";
@@ -19,7 +19,7 @@ export default function Brandcontainer() {
                   rel="noopener noreferrer"
                 >
                   <div className="absolute shrink-0 top-0 left-0 right-0 bottom-0 rounded-[inherit]">
-                    <Image
+                    <img
                       src={brand.icon}
                       className="w-full block shrink-0 h-full object-contain rounded-[inherit]"
                       alt={brand.name}

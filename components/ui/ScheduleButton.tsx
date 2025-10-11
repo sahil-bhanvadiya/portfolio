@@ -1,6 +1,6 @@
 "use client";
 import { getCalApi } from "@calcom/embed-react";
-import Image from "next/image";
+
 import { useEffect } from "react";
 
 interface ScheduleButtonProps {
@@ -27,7 +27,7 @@ export default function ScheduleButton({ icon, label }: ScheduleButtonProps) {
         {/* Icon */}
         <div className="aspect-square opacity-70 group-hover:opacity-100 transition-all duration-500 relative h-5 w-5 overflow-hidden">
           <figure className="absolute inset-0 h-full w-full rounded-[inherit]">
-            <Image
+            <img
               src={icon}
               alt="calendarIcon"
               className="block w-full h-full object-cover object-center"

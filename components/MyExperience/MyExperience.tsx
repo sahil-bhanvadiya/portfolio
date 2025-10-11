@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import Link from "next/link";
 import { briefcaseIconley } from "@/app/assets/assets";
 import { myExperience } from "@/data";
@@ -38,7 +38,7 @@ export default function MyExperience() {
                   <div className="bg-dark-gray-4 border border-border-color rounded-lg flex float-none gap-[10px] h-min justify-center items-center overflow-visible p-[10px] relative w-min ">
                     <div className="flex-none aspect-square h-auto overflow-visible relative w-[30px] ">
                       <figure className="block absolute inset-0">
-                        <Image
+                        <img
                           width={30}
                           height={30}
                           src={exp.logo}
