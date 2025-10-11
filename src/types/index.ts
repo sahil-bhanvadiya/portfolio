@@ -23,6 +23,7 @@ export interface counterListsType {
   id: number;
   title: string;
   value: number;
+  symbol: string;
 }
 
 export interface myExperienceTypes {
@@ -30,10 +31,8 @@ export interface myExperienceTypes {
   year: string;
   title: string;
   company: string;
-  label: string;
   description: string;
   link: string;
-  logo: string;
 }
 
 export interface myStackTypes {

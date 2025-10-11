@@ -1,7 +1,6 @@
 import { Mail, User, Zap } from "lucide-react";
 import {
   asanaIcon,
-  athonLogo,
   client_1,
   client_2,
   client_3,
@@ -18,7 +17,6 @@ import {
   linkedInIcon,
   notionIcon,
   pinterest,
-  pixelworksLogo,
   project_1,
   project_2,
   project_3,
@@ -27,7 +25,6 @@ import {
   slackIcon,
   snapchat,
   spotify,
-  vortexLogo,
   webDesignIcon,
   webDevIcon,
   webflowIcon,
@@ -132,59 +129,57 @@ export const socialBrands: socialBrandsTypes[] = [
 export const counterLists: counterListsType[] = [
   {
     id: 1,
-    title: "Happy Clients",
-    value: 45,
+    title: "Year of Experience",
+    value: 4,
+    symbol: "+",
   },
   {
     id: 2,
-    title: "Year of Experience",
-    value: 2,
+    title: "Projects Worked",
+    value: 50,
+    symbol: "+",
   },
   {
     id: 3,
-    title: "Completed Tasks",
-    value: 40,
+    title: "OS Contributions",
+    value: 5,
+    symbol: "+",
   },
   {
     id: 4,
-    title: "Awards Received",
-    value: 6,
+    title: "Client Satisfaction",
+    value: 100,
+    symbol: "%",
   },
 ];
 
 export const myExperience: myExperienceTypes[] = [
   {
     id: 1,
-    year: "2023 - Present",
-    title: "Product Designer",
-    company: "Vortex",
-    label: "Tech Firm",
+    year: "2022 - Present",
+    title: "Senior Software Engineer",
+    company: "Seaflux",
     description:
-      "Headed product design initiatives, defined design strategy, and ensured alignment with business objectives for market-leading products.",
-    link: "vortex.com",
-    logo: vortexLogo,
+      "Leading full-stack development projects, mentoring junior developers, and collaborating with cross-functional teams to deliver high-quality software solutions.",
+    link: "seaflux.tech",
   },
   {
     id: 2,
-    year: "2022 - 2023",
-    title: "Senior UI/UX Designer",
-    company: "PixelWorks",
-    label: "Design Studio",
+    year: "2021 - 2021",
+    title: "Web Developer Intern",
+    company: "CreArt® Solutions Pvt Ltd",
     description:
-      "Provided leadership in UI/UX design, mentored junior designers, and collaborated with cross-functional teams for product excellence.",
-    link: "pixelworks.io",
-    logo: pixelworksLogo,
+      "Assisted in developing and maintaining company websites, collaborated with the design team to implement responsive designs, and optimized web performance for better user experience.",
+    link: "creartsolutions.com",
   },
   {
     id: 3,
-    year: "2020 - 2022",
-    title: "UI/UX Designer",
-    company: "Athon",
-    label: "Tech Start-up",
+    year: "2021 - 2021",
+    title: "Summer Intern",
+    company: "VNurture",
     description:
-      "Led UI/UX design projects from concept to delivery, conducted user testing, and iterated designs for optimal user experience.",
-    link: "athon.com",
-    logo: athonLogo,
+      "Contributed to front-end development tasks, participated in code reviews, and gained hands-on experience in web development technologies and best practices.",
+    link: "vnurture.in",
   },
 ];
 

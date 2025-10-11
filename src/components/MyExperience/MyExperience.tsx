@@ -13,7 +13,7 @@ export default function MyExperience() {
         <SectionHeading
           icon={briefcaseIconley}
           title="My experience"
-          description="Navigating diverse environments with adaptability and expertise for holistic solutions."
+          description="Where I've worked and what I've done"
         />
       </div>
       <div className="w-full">
@@ -35,17 +35,11 @@ export default function MyExperience() {
             >
               <div className="w-full flex justify-between flex-none items-center h-min flex-nowrap overflow-visible p-0 relative">
                 <div className="flex items-center flex-1 gap-2 h-min justify-start overflow-visible p-0 relative ">
-                  <div className="bg-dark-gray-4 border border-border-color rounded-lg flex float-none gap-[10px] h-min justify-center items-center overflow-visible p-[10px] relative w-min ">
-                    <div className="flex-none aspect-square h-auto overflow-visible relative w-[30px] ">
-                      <figure className="block absolute inset-0">
-                        <img
-                          width={30}
-                          height={30}
-                          src={exp.logo}
-                          alt="icon"
-                          className="block w-full h-full rounded-[inherit] object-cover object-center "
-                        />
-                      </figure>
+                  <div className="bg-dark-gray-4 border border-border-color rounded-lg flex float-none gap-[10px] justify-center items-center overflow-visible h-[50px] w-[50px] relative">
+                    <div className="flex-none aspect-square h-full w-full overflow-visible relative">
+                      <div className="flex items-center justify-center w-full h-full rounded-[inherit] text-light-gray-4 font-bold text-xl">
+                        {exp.company.charAt(0)}
+                      </div>
                     </div>
                   </div>
                   <div className="flex float-none flex-nowrap items-start gap-[6px] h-min justify-center overflow-visible p-0 relative w-min ">
@@ -62,14 +56,6 @@ export default function MyExperience() {
                         >
                           {exp.link}
                         </Link>
-                      </div>
-                    </div>
-
-                    <div className="bg-dark-gray-2 border border-dark-gray-3 flex flex-none items-center justify-start flex-nowrap gap-[10px] h-min overflow-visible p-[4px_10px] relative w-min rounded-3xl ">
-                      <div className="flex-none h-auto relative whitespace-pre w-auto flex flex-col justify-start shrink-0">
-                        <p className="font-medium text-xs sm:text-[14px]  text-light-gray-2">
-                          {exp.label}
-                        </p>
                       </div>
                     </div>
                   </div>

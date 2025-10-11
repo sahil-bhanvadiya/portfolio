@@ -25,7 +25,9 @@ export default function CounterContainer() {
                 </div>
               </div>
               <div className="flex shrink-0 flex-col justify-start float-none h-auto relative whitespace-pre w-auto">
-                <h1 className="text-[34px] font-bold text-white ">+</h1>
+                <h1 className="text-[28px] font-bold text-white ">
+                  {list.symbol}
+                </h1>
               </div>
             </div>
             <div className="flex shrink-0 flex-col justify-start w-full flex-none relative whitespace-pre-wrap break-words">
