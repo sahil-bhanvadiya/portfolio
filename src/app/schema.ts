@@ -2,8 +2,8 @@ export const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Sahil Bhanvadiya",
-  url: "https://sahilbhanvadiya.com",
-  image: "https://sahilbhanvadiya.com/profile.png",
+  url: "https://sahilbhanvadiya.vercel.app/",
+  image: "https://sahilbhanvadiya.vercel.app/profile.png",
   sameAs: [
     "https://github.com/sahil-bhanvadiya",
     "https://www.linkedin.com/in/sahil-bhanvadiya",
@@ -44,7 +44,7 @@ export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Sahil Bhanvadiya Portfolio",
-  url: "https://sahilbhanvadiya.com",
+  url: "https://sahilbhanvadiya.vercel.app/",
   description:
     "Portfolio website of Sahil Bhanvadiya, a full stack developer, problem solver, and tech enthusiast.",
   author: {
@@ -65,7 +65,7 @@ export const profilePageSchema = {
     alternateName: "Sahil",
     description:
       "Full Stack Developer with expertise in building scalable web applications, AI integration, and cloud technologies",
-    image: "https://sahilbhanvadiya.com/profile.png",
+    image: "https://sahilbhanvadiya.vercel.app/profile.png",
   },
 };
 

@@ -79,14 +79,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://sahilbhanvadiya.com"),
+  metadataBase: new URL("https://sahilbhanvadiya.vercel.app/"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sahilbhanvadiya.com",
+    url: "https://sahilbhanvadiya.vercel.app/",
     title: "Sahil Bhanvadiya | Full Stack Developer & Software Engineer",
     description:
       "Full Stack Developer building scalable web applications using React, Next.js, Node.js, AI technologies, and cloud infrastructure.",
@@ -119,10 +119,10 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code", // Add after setting up Google Search Console
-    // bing: "your-bing-verification-code",
-  },
+  // verification: {
+  //   google: "your-google-verification-code", // Add after setting up Google Search Console
+  //   // bing: "your-bing-verification-code",
+  // },
 };
 
 export default function RootLayout({
