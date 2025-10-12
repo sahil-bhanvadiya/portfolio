@@ -11,11 +11,8 @@ import {
   confluence,
   css,
   cursor,
-  discord,
   docker,
-  dribble,
   expressjs,
-  facebook,
   figmaIcon,
   git,
   github,
@@ -38,7 +35,6 @@ import {
   nodejs,
   notionIcon,
   openai,
-  pinterest,
   pm2,
   postgresql,
   postico,
@@ -56,9 +52,7 @@ import {
   seoOptIcon,
   shadcn,
   slackIcon,
-  snapchat,
   socket,
-  spotify,
   stripe,
   tailwind,
   trello,
@@ -75,10 +69,112 @@ import type {
   myServicesTypes,
   myShowCasesTypes,
   myStackTypes,
-  socialBrandsTypes,
   socialListsTypes,
   testimonialsTypes,
 } from "@/types";
+
+export const personalQualities = [
+  {
+    id: 1,
+    name: "Curious",
+    description:
+      "Always eager to learn new technologies and explore innovative solutions",
+    icon: "🤔",
+  },
+  {
+    id: 2,
+    name: "Enthusiastic",
+    description:
+      "Passionate about coding and building amazing digital experiences",
+    icon: "🚀",
+  },
+  {
+    id: 3,
+    name: "Problem Solver",
+    description:
+      "Love tackling complex challenges and finding elegant solutions",
+    icon: "🧩",
+  },
+  {
+    id: 5,
+    name: "Detail-Oriented",
+    description: "Committed to writing clean, maintainable, and efficient code",
+    icon: "🔍",
+  },
+  {
+    id: 6,
+    name: "Collaborative",
+    description: "Enjoy working with teams to create exceptional products",
+    icon: "🤝",
+  },
+  {
+    id: 7,
+    name: "Adaptable",
+    description:
+      "Quick to learn and adapt to new technologies and methodologies",
+    icon: "🌟",
+  },
+  {
+    id: 8,
+    name: "Goal-Driven",
+    description: "Focused on delivering results and exceeding expectations",
+    icon: "🎯",
+  },
+  {
+    id: 9,
+    name: "Innovative",
+    description: "Always seeking new approaches and cutting-edge solutions",
+    icon: "💡",
+  },
+  {
+    id: 10,
+    name: "Persistent",
+    description: "Never giving up until the perfect solution is achieved",
+    icon: "💪",
+  },
+  {
+    id: 11,
+    name: "Analytical",
+    description: "Breaking down complex problems into manageable components",
+    icon: "📊",
+  },
+  {
+    id: 12,
+    name: "Reliable",
+    description: "Consistent delivery of high-quality work on time",
+    icon: "⏰",
+  },
+  {
+    id: 13,
+    name: "Forward-Thinking",
+    description: "Anticipating future trends and building scalable solutions",
+    icon: "🔮",
+  },
+  {
+    id: 14,
+    name: "User-Focused",
+    description: "Prioritizing user experience in every design decision",
+    icon: "👥",
+  },
+  {
+    id: 15,
+    name: "Perfectionist",
+    description: "Striving for excellence in every line of code",
+    icon: "✨",
+  },
+  {
+    id: 16,
+    name: "Tech Enthusiast",
+    description: "Passionate about emerging technologies and their potential",
+    icon: "⚡",
+  },
+  {
+    id: 4,
+    name: "Creative",
+    description: "Bringing innovative ideas to life through code and design",
+    icon: "🎨",
+  },
+];
 
 export const socialLists: socialListsTypes[] = [
   {
@@ -98,45 +194,6 @@ export const socialLists: socialListsTypes[] = [
     title: "Instagram",
     icon: instagramIcon,
     link: "https://www.instagram.com/sahil_bhanvadiya/",
-  },
-];
-
-export const socialBrands: socialBrandsTypes[] = [
-  {
-    id: 1,
-    name: "Discord",
-    icon: discord,
-    link: "https://discord.com",
-  },
-  {
-    id: 2,
-    name: "Dribbble",
-    icon: dribble,
-    link: "https://dribbble.com",
-  },
-  {
-    id: 3,
-    name: "Facebook",
-    icon: facebook,
-    link: "https://facebook.com",
-  },
-  {
-    id: 4,
-    name: "Pinterest",
-    icon: pinterest,
-    link: "https://pinterest.com",
-  },
-  {
-    id: 5,
-    name: "SnapChat",
-    icon: snapchat,
-    link: "https://snapchat.com",
-  },
-  {
-    id: 6,
-    name: "Spotify",
-    icon: spotify,
-    link: "https://open.spotify.com",
   },
 ];
 

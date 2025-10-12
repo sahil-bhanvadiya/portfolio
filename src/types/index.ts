@@ -5,13 +5,6 @@ export interface socialListsTypes {
   link: string;
 }
 
-export interface socialBrandsTypes {
-  id: number;
-  name: string;
-  icon: string;
-  link: string;
-}
-
 export interface counterListsType {
   id: number;
   title: string;
