@@ -120,8 +120,14 @@ export const faqSchema = {
 // Testimonials/Reviews Schema for Rich Snippets
 export const reviewSchema = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Sahil Bhanvadiya",
+  "@type": "Service",
+  name: "Full Stack Development Services",
+  description: "Professional web development, AI integration, and cloud solutions",
+  provider: {
+    "@type": "Person",
+    name: "Sahil Bhanvadiya",
+    url: "https://sahilbhanvadiya.vercel.app/"
+  },
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",
@@ -132,6 +138,10 @@ export const reviewSchema = {
   review: [
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "Service",
+        name: "MVP Development Services"
+      },
       author: {
         "@type": "Person",
         name: "Sibtain J.",
@@ -151,6 +161,10 @@ export const reviewSchema = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "Service",
+        name: "AI Development Services"
+      },
       author: {
         "@type": "Person",
         name: "Divyam A.",
@@ -170,6 +184,10 @@ export const reviewSchema = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "Service",
+        name: "DevOps Services"
+      },
       author: {
         "@type": "Person",
         name: "Happy P.",
@@ -189,6 +207,10 @@ export const reviewSchema = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "Service",
+        name: "Frontend Development Services"
+      },
       author: {
         "@type": "Person",
         name: "Toru T.",
@@ -208,6 +230,10 @@ export const reviewSchema = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "Service",
+        name: "Backend Development Services"  
+      },
       author: {
         "@type": "Person",
         name: "Sid S.",
@@ -226,7 +252,11 @@ export const reviewSchema = {
       },
     },
     {
-      "@type": "Review",
+      "@type": "Review", 
+      itemReviewed: {
+        "@type": "Service",
+        name: "Full Stack Development Services"
+      },
       author: {
         "@type": "Person",
         name: "Saurabh B.",
