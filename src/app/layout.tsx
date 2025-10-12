@@ -122,10 +122,12 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  // verification: {
-  //   google: "your-google-verification-code", // Add after setting up Google Search Console
-  //   // bing: "your-bing-verification-code",
-  // },
+  verification: {
+    google: "HL0QvYPPb5QD02uzxedK4hkvygg9qL-K2ug218qxyCE",
+    other: {
+      "msvalidate.01": "E14798D5BCFBE68B59FF47FFDBF3C62B",
+    },
+  },
 };
 
 export default function RootLayout({
