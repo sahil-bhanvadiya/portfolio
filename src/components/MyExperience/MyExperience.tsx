@@ -52,9 +52,10 @@ export default function MyExperience() {
                       <div className="flex-none h-auto relative whitespace-pre w-auto flex flex-col justify-start shrink-0">
                         <Link
                           href={exp.link}
+                          target="_blank"
                           className="font-medium cursor-pointer  text-[15px]  text-light-gray-2"
                         >
-                          {exp.link}
+                          {exp.linkText}
                         </Link>
                       </div>
                     </div>

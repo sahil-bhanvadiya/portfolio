@@ -175,16 +175,18 @@ export const myExperience: myExperienceTypes[] = [
     company: "Seaflux",
     description:
       "Leading full-stack development projects, mentoring junior developers, and collaborating with cross-functional teams to deliver high-quality software solutions.",
-    link: "seaflux.tech",
+    link: "https://www.seaflux.tech/",
+    linkText: "seaflux.tech",
   },
   {
     id: 2,
     year: "2021 - 2021",
     title: "Web Developer Intern",
-    company: "CreArt® Solutions Pvt Ltd",
+    company: "CreArt",
     description:
       "Assisted in developing and maintaining company websites, collaborated with the design team to implement responsive designs, and optimized web performance for better user experience.",
-    link: "creartsolutions.com",
+    link: "https://www.creartsolutions.com/",
+    linkText: "creartsolutions.com",
   },
   {
     id: 3,
@@ -193,7 +195,8 @@ export const myExperience: myExperienceTypes[] = [
     company: "VNurture",
     description:
       "Contributed to front-end development tasks, participated in code reviews, and gained hands-on experience in web development technologies and best practices.",
-    link: "vnurture.in",
+    link: "https://vnurture.in/",
+    linkText: "vnurture.in",
   },
 ];
 

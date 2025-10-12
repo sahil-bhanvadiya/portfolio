@@ -18,8 +18,9 @@ export default function Hero() {
               <img
                 src={AvatarMe}
                 alt="Avatar"
-                width={300}
-                height={300}
+                fetchPriority="high"
+                width={260}
+                height={260}
                 className="w-full h-full object-cover rounded-2xl"
               />
             </figure>

@@ -75,8 +75,8 @@ export default function SideNavbar({ isMenuOpen }: SideNavbarProps) {
         >
           <Link
             href="#top"
-            className={`p-3.5  flex cursor-pointer border border-transparent overflow-hidden items-center justify-center h-min w-min  relative rounded-xl hover:bg-very-dark-gray hover:border-dark-gray-3
-                        }`}
+            aria-label="Go to Top"
+            className={`p-3.5 flex cursor-pointer border border-transparent overflow-hidden items-center justify-center h-min w-min  relative rounded-xl hover:bg-very-dark-gray hover:border-dark-gray-3}`}
           >
             <span className="text-light-gray-2">
               <ArrowUp size={24} />

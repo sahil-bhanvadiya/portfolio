@@ -19,6 +19,7 @@ export default function ScheduleButton({
   return isForSidebar ? (
     <button
       type="button"
+      aria-label="Schedule Meeting"
       data-cal-namespace="15min"
       data-cal-link="sahil-bhanvadiya/15min"
       data-cal-config='{"layout":"month_view"}'

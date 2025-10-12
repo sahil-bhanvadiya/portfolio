@@ -120,14 +120,17 @@ export const faqSchema = {
 // Testimonials/Reviews Schema for Rich Snippets
 export const reviewSchema = {
   "@context": "https://schema.org",
-  "@type": "Service",
+  "@type": "Product",
   name: "Full Stack Development Services",
-  description: "Professional web development, AI integration, and cloud solutions",
-  provider: {
+  description:
+    "Professional web development, AI integration, and cloud solutions",
+  brand: {
     "@type": "Person",
     name: "Sahil Bhanvadiya",
-    url: "https://sahilbhanvadiya.vercel.app/"
+    url: "https://sahilbhanvadiya.vercel.app/",
   },
+  category: "Software Development",
+  url: "https://sahilbhanvadiya.vercel.app/services",
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",
@@ -139,8 +142,9 @@ export const reviewSchema = {
     {
       "@type": "Review",
       itemReviewed: {
-        "@type": "Service",
-        name: "MVP Development Services"
+        "@type": "Product",
+        name: "MVP Development Services",
+        category: "Software Development",
       },
       author: {
         "@type": "Person",
@@ -153,17 +157,13 @@ export const reviewSchema = {
       },
       reviewBody:
         "Impressive work by Sahil in building our MVP. He combined solid technical skills with a clear understanding of our business needs, ensuring a smooth and fast development process from concept to delivery.",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "San Francisco",
-        addressCountry: "USA",
-      },
     },
     {
       "@type": "Review",
       itemReviewed: {
-        "@type": "Service",
-        name: "AI Development Services"
+        "@type": "Product",
+        name: "AI Development Services",
+        category: "Artificial Intelligence",
       },
       author: {
         "@type": "Person",
@@ -176,17 +176,13 @@ export const reviewSchema = {
       },
       reviewBody:
         "Excellent work! Sahil built my AI chatbot efficiently and delivered beyond expectations. Highly recommend for any AI or web development projects. The project was completed on time and within budget.",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Ahmedabad",
-        addressCountry: "India",
-      },
     },
     {
       "@type": "Review",
       itemReviewed: {
-        "@type": "Service",
-        name: "DevOps Services"
+        "@type": "Product",
+        name: "DevOps Services",
+        category: "Cloud Infrastructure",
       },
       author: {
         "@type": "Person",
@@ -199,17 +195,13 @@ export const reviewSchema = {
       },
       reviewBody:
         "Excellent DevOps work by Sahil. He configured AWS ECS deployments and implemented robust CI/CD pipelines for three separate repositories, ensuring smooth and automated deployments. Highly efficient and well-documented setup.",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Brampton",
-        addressCountry: "Canada",
-      },
     },
     {
       "@type": "Review",
       itemReviewed: {
-        "@type": "Service",
-        name: "Frontend Development Services"
+        "@type": "Product",
+        name: "Frontend Development Services",
+        category: "Web Development",
       },
       author: {
         "@type": "Person",
@@ -222,17 +214,13 @@ export const reviewSchema = {
       },
       reviewBody:
         "Sahil is exceptional at transforming vision into reality. He successfully converted our Figma designs into fully functional Next.js code. He's highly skilled, responsive, and cooperative, making him the ideal support for any project.",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Tokyo",
-        addressCountry: "Japan",
-      },
     },
     {
       "@type": "Review",
       itemReviewed: {
-        "@type": "Service",
-        name: "Backend Development Services"  
+        "@type": "Product",
+        name: "Backend Development Services",
+        category: "Software Development",
       },
       author: {
         "@type": "Person",
@@ -245,17 +233,13 @@ export const reviewSchema = {
       },
       reviewBody:
         "Sahil did an outstanding job developing the backend for our social media platform. He built a robust architecture, implemented secure payment integration, and ensured the system performs smoothly under load. Excellent work!",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Dubai",
-        addressCountry: "UAE",
-      },
     },
     {
-      "@type": "Review", 
+      "@type": "Review",
       itemReviewed: {
-        "@type": "Service",
-        name: "Full Stack Development Services"
+        "@type": "Product",
+        name: "Full Stack Development Services",
+        category: "Software Development",
       },
       author: {
         "@type": "Person",
@@ -268,11 +252,6 @@ export const reviewSchema = {
       },
       reviewBody:
         "Sahil is a great developer. He has a great attitude. He commits and sticks to the timeline. He is co-operative and goes the extra mile to make the product better. His role was very crucial in taking my product to the next level. I highly recommend anyone to work with him.",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Mumbai",
-        addressCountry: "India",
-      },
     },
   ],
 };

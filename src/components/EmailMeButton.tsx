@@ -22,12 +22,12 @@ const EmailMeButton = ({
     <button
       type="button"
       onClick={handleClick}
+      aria-label="Email Me"
       className={`p-3.5 group flex cursor-pointer border items-center justify-center transition-all duration-300 h-min w-min  relative rounded-xl hover:bg-very-dark-gray hover:border-dark-gray-3 bg-almost-black border-dark-gray-3 text-white`}
     >
       <span className="text-light-gray-3">
         <Mail size={18} />
       </span>
-
       <Tooltip content="Email Me" position="right" />
     </button>
   ) : (

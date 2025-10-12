@@ -26,6 +26,7 @@ export interface myExperienceTypes {
   company: string;
   description: string;
   link: string;
+  linkText: string;
 }
 
 export interface myStackTypes {

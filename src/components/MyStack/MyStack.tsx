@@ -53,7 +53,7 @@ export default function MyStack() {
                     className="grid gap-[10px] flex-none auto-rows-min h-min justify-center overflow-visible relative p-0 w-full grid-cols-[repeat(auto-fill,minmax(62px,1fr))]"
                   >
                     {category.value.map((stack) => (
-                      <div
+                      <li
                         key={stack.id}
                         className="cursor-pointer bg-dark-gray-4 border border-border-color rounded-[7px] flex items-center flex-none flex-nowrap gap-[10px] h-[62px] w-[62px] justify-center overflow-visible p-2 relative hover:scale-110 transition-transform duration-300 group"
                       >
@@ -71,7 +71,7 @@ export default function MyStack() {
                         <span className="absolute bottom-[70%] left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:flex bg-dark-gray-3 text-light-gray-4 text-xs font-medium py-1 px-2 rounded-md whitespace-nowrap z-50 shadow-lg">
                           {stack.title}
                         </span>
-                      </div>
+                      </li>
                     ))}
                   </motion.ul>
                 </div>

@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Header/Navbar";
@@ -21,12 +21,16 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-Space_Grotesk",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap", // Prevent font loading from blocking render
+  preload: true,
 });
 
 const ibmPlexMono = IBM_Plex_Mono({
   variable: "--font-IBM_Plex_Mono",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap", // Prevent font loading from blocking render
+  preload: false, // Only preload primary font
 });
 
 export const metadata: Metadata = {
@@ -54,7 +58,6 @@ export const metadata: Metadata = {
     "Backend Developer",
     "Portfolio",
     "UI/UX Developer",
-    "Seaflux",
     "AI Developer",
     "Machine Learning",
     "Artificial Intelligence",
@@ -133,6 +136,8 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dark" style={{ colorScheme: "dark" }}>
       <head>
+        {/* Preload critical resources */}
+        <link rel="preload" href="/profile.webp" as="image" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
