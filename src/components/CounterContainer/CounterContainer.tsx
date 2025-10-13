@@ -15,7 +15,7 @@ export default function CounterContainer() {
       viewport={{ once: true }}
       className="flex flex-none gap-5 flex-nowrap h-min justify-start py-5 relative px-0 overflow-visible items-start border-b border-dashed border-t border-dark-gray-4 w-full "
     >
-      <ul className=" grid grid-cols-2 sm:flex items-center gap-2 justify-between w-full">
+      <ul className=" grid grid-cols-2 sm:flex items-center gap-y-8 md:gap-y-2 gap-2 justify-between w-full">
         {counterLists.map((list) => (
           <li key={list.id} className="w-full">
             <div className="flex-1 flex  flex-nowrap gap-[4px] h-min p-0 relative items-center overflow-visible justify-center  ">

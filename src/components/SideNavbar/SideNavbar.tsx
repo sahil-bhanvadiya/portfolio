@@ -5,6 +5,7 @@ import { ArrowUp } from "lucide-react";
 
 import Link from "next/link";
 import { sidebarLogo } from "@/app/assets/assets";
+import { socialLists } from "@/data";
 import EmailMeButton from "../EmailMeButton";
 import ScheduleButton from "../ui/ScheduleButton";
 import Tooltip from "../ui/Tooltop";
@@ -26,11 +27,11 @@ export default function SideNavbar({ isMenuOpen }: SideNavbarProps) {
         maxWidth: isMenuOpen ? "140px" : "13%",
       }}
     >
-      <div className="flex items-end justify-between h-full flex-none flex-nowrap relative p-[20px_30px_40px_0px] flex-col">
+      <div className="flex md:items-end md:justify-between items-center h-full flex-none flex-nowrap relative p-[20px_0px_40px_0px] md:p-[20px_30px_40px_0px] flex-col">
         {/* top */}
         <Link
           href="/"
-          className="bg-border-color rounded-full w-[60px] border border-zinc-800 hover:scale-95 transition-all duration-300 h-auto aspect-square p-[4px] relative overflow-hidden flex items-center justify-center flex-none flex-nowrap gap-[10px]"
+          className="bg-border-color mb-5 rounded-full w-[60px] border border-zinc-800 hover:scale-95 transition-all duration-300 h-auto aspect-square p-[4px] relative overflow-hidden flex items-center justify-center flex-none flex-nowrap gap-[10px]"
         >
           <div className="w-[50px] aspect-square h-auto rounded-full flex-none relative bg-darkest-gray">
             <div className="absolute rounded-full inset-0">
@@ -55,10 +56,28 @@ export default function SideNavbar({ isMenuOpen }: SideNavbarProps) {
             viewport={{
               once: true,
             }}
+            className="flex flex-col gap-4"
           >
             <EmailMeButton isForSidebar />
-            <br />
             <ScheduleButton isForSidebar />
+            {socialLists.map((social) => (
+              <Link
+                key={social.id}
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="md:hidden p-3.5 group flex cursor-pointer border items-center justify-center transition-all duration-300 relative rounded-xl hover:bg-very-dark-gray hover:border-dark-gray-3 bg-almost-black border-dark-gray-3 text-white"
+              >
+                <span className="text-light-gray-3">
+                  <img
+                    src={social.icon}
+                    alt={social.title}
+                    height={18}
+                    width={18}
+                  />
+                </span>
+              </Link>
+            ))}
           </motion.li>
         </motion.ul>
         {/* bottom */}
@@ -71,7 +90,7 @@ export default function SideNavbar({ isMenuOpen }: SideNavbarProps) {
             type: "spring",
             stiffness: 120,
           }}
-          className="relative group items-center w-full flex justify-end max-w-max"
+          className="hidden relative group items-center w-full md:flex justify-end max-w-max"
         >
           <Link
             href="#top"
