@@ -23,6 +23,7 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["400", "500", "600", "700"],
   display: "swap", // Prevent font loading from blocking render
   preload: true,
+  fallback: ["system-ui", "-apple-system", "sans-serif"],
 });
 
 const ibmPlexMono = IBM_Plex_Mono({
@@ -31,6 +32,7 @@ const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "500", "600", "700"],
   display: "swap", // Prevent font loading from blocking render
   preload: false, // Only preload primary font
+  fallback: ["Menlo", "Monaco", "Consolas", "monospace"],
 });
 
 export const metadata: Metadata = {
@@ -138,8 +140,26 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dark" style={{ colorScheme: "dark" }}>
       <head>
-        {/* Preload critical resources */}
-        <link rel="preload" href="/profile.webp" as="image" />
+        <link rel="preconnect" href="https://app.cal.com" />
+        <link
+          rel="preconnect"
+          href="https://va.vercel-scripts.com/v1/script.debug.js"
+        />
+        <link
+          rel="preconnect"
+          href="https://va.vercel-scripts.com/v1/speed-insights/script.debug.js"
+        />
+        <link rel="dns-prefetch" href="https://github.com" />
+        <link rel="dns-prefetch" href="https://linkedin.com" />
+        <link rel="dns-prefetch" href="https://instagram.com" />
+
+        <link
+          rel="preload"
+          href="/profile.webp"
+          as="image"
+          fetchPriority="high"
+        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
