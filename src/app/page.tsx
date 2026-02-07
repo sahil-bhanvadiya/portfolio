@@ -7,6 +7,8 @@ const MyExperience = lazy(
   () => import("@/components/MyExperience/MyExperience"),
 );
 const MyStack = lazy(() => import("@/components/MyStack/MyStack"));
+const ShowCase = lazy(() => import("@/components/ShowCase"));
+const LinkedInPosts = lazy(() => import("@/components/LinkedInPosts"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const ContactForm = lazy(() => import("@/components/ContactForm/ContactForm"));
 const FAQ = lazy(() => import("@/components/FAQ/FAQ"));
@@ -24,7 +26,12 @@ export default function Home() {
         </Suspense>
         {/* TODO: WIP */}
         {/* <MyServices /> */}
-        {/* <ShowCase showData={2} isMore /> */}
+        <Suspense fallback={<Loader />}>
+          <ShowCase />
+        </Suspense>
+        <Suspense fallback={<Loader />}>
+          <LinkedInPosts />
+        </Suspense>
         <Suspense fallback={<Loader />}>
           <Testimonials />
         </Suspense>

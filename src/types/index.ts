@@ -44,9 +44,8 @@ export interface myShowCasesTypes {
   description: string;
   link: string;
   type: string;
-  theme: string;
-  pages: number;
-  image: string;
+  role: string;
+  techStack: string[];
 }
 
 export interface testimonialsTypes {
@@ -60,3 +59,8 @@ export type FAQ = {
   question: string;
   answer: string;
 };
+
+export interface linkedInPostTypes {
+  id: number;
+  embedId: string; // LinkedIn embed ID (e.g., "urn:li:ugcPost:7419457465936732161")
+}

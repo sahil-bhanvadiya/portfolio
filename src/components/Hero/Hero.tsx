@@ -6,6 +6,7 @@ import Brandcontainer from "../Brandcontainer/Brandcontainer";
 import CounterContainer from "../CounterContainer/CounterContainer";
 import EmailMeButton from "../EmailMeButton";
 import ScheduleButton from "../ui/ScheduleButton";
+import ResumeButton from "../ResumeButton";
 
 export default function Hero() {
   return (
@@ -108,10 +109,15 @@ export default function Hero() {
               delay: 0.4,
             }}
             viewport={{ once: true }}
-            className="flex  items-start flex-none flex-nowrap  w-full gap-5 h-min justify-start p-0 relative"
+            className="flex flex-wrap items-start flex-none gap-3 h-min justify-start p-0 relative w-full"
           >
-            <EmailMeButton />
-            <ScheduleButton />
+            <div className="flex items-start flex-none flex-nowrap gap-3 h-min justify-start w-full sm:w-auto">
+              <EmailMeButton />
+              <ScheduleButton />
+            </div>
+            <div className="flex items-start flex-none flex-nowrap gap-3 h-min justify-start w-full sm:w-auto">
+              <ResumeButton />
+            </div>
           </motion.div>
         </div>
       </section>

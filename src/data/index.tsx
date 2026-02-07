@@ -39,10 +39,6 @@ import {
   postgresql,
   postico,
   postman,
-  project_1,
-  project_2,
-  project_3,
-  project_4,
   rabbitmq,
   razorpay,
   react,
@@ -61,10 +57,15 @@ import {
   vscode,
   webDesignIcon,
   webDevIcon,
+  langchain,
+  langgraph,
+  rag,
+  pinecone,
 } from "@/app/assets/assets";
 import type {
   counterListsType,
   FAQ,
+  linkedInPostTypes,
   myExperienceTypes,
   myServicesTypes,
   myShowCasesTypes,
@@ -181,7 +182,7 @@ export const socialLists: socialListsTypes[] = [
     id: 1,
     title: "LinkedIn",
     icon: linkedInIcon,
-    link: "hhttps://www.linkedin.com/in/sahil-bhanvadiya/",
+    link: "https://www.linkedin.com/in/sahil-bhanvadiya/",
   },
   {
     id: 2,
@@ -207,7 +208,7 @@ export const counterLists: counterListsType[] = [
   {
     id: 2,
     title: "Projects Worked",
-    value: 50,
+    value: 25,
     symbol: "+",
   },
   {
@@ -307,6 +308,10 @@ export const myStack: myStackTypes[] = [
       { id: 39, title: "MCP", logo: mcp },
       { id: 41, title: "OpenAI", logo: openai },
       { id: 44, title: "Cursor", logo: cursor },
+      { id: 45, title: "LangChain", logo: langchain },
+      { id: 46, title: "LangGraph", logo: langgraph },
+      { id: 47, title: "RAG", logo: rag },
+      { id: 48, title: "Pinecone", logo: pinecone },
     ],
   },
   {
@@ -394,47 +399,61 @@ export const myServices: myServicesTypes[] = [
 export const myShowCases: myShowCasesTypes[] = [
   {
     id: 1,
-    title: "Devcraft",
+    title: "AI-Powered Patient Triage System",
     description:
-      "Showcasing expertise, passion, and innovation in the realm of development.",
-    link: "vortex.com",
-    type: "Portfolio",
-    theme: "Dark",
-    pages: 4,
-    image: project_1,
+      "Architected and developed a secure, full-stack healthcare application to streamline patient intake and information management. Engineered a conversational AI agent using LangGraph for complex state management, enabling the system to perform intelligent patient triage, answer FAQs, and dynamically route patients to the correct medical resources.",
+    link: "#",
+    type: "Healthcare & AI",
+    role: "Full-Stack Developer & Project Manager",
+    techStack: [
+      "React",
+      "Next.js",
+      "Node.js",
+      "PostgreSQL",
+      "LangChain",
+      "LangGraph",
+      "LLM Integration",
+      "RAG",
+      "AWS",
+      "Socket.io",
+    ],
   },
   {
     id: 2,
-    title: "Zenith Gym",
+    title: "Enterprise Healthcare Platform",
     description:
-      "Empowering fitness enthusiasts with an immersive online experience.",
-    link: "zenith.com",
-    type: "Fitness",
-    theme: "Light",
-    pages: 5,
-    image: project_2,
+      "Architected a secure, cloud-based solution compliant with strict healthcare data standards, ensuring seamless interoperability between EMR and CHR modules. Implemented real-time data sharing and telehealth features, significantly reducing administrative friction and improving provider-patient care coordination.",
+    link: "#",
+    type: "Healthcare",
+    role: "Full-Stack Developer",
+    techStack: ["React", "Next.js", "Node.js", "PostgreSQL", "AWS", "Socket.io"],
   },
   {
     id: 3,
-    title: "Novus Agency",
+    title: "Innovative Event Management Platform",
     description:
-      "Transforming ideas into digital realities with creativity and expertise.",
-    link: "novus.com",
-    type: "Business",
-    theme: "Dark",
-    pages: 6,
-    image: project_3,
+      "Led the full-stack development of a multi-platform ecosystem (Web, Admin Panel, Mobile Apps), featuring complex tiered ticketing systems and staff-facing redemption tools. Engineered brand engagement tools and a pass redemption system that streamlined entry management and enhanced the attendee experience.",
+    link: "#",
+    type: "Event Management",
+    role: "Project Manager & Lead Full-Stack Developer",
+    techStack: ["React", "Next.js", "Node.js", "MongoDB", "AWS"],
   },
   {
     id: 4,
-    title: "Apex Agency",
+    title: "Crypto Mining Analytics Dashboard",
     description:
-      "Setting the pinnacle of digital excellence with cutting-edge solutions and creativity.",
-    link: "apex.com",
-    type: "Business",
-    theme: "Light",
-    pages: 6,
-    image: project_4,
+      "Developed a high-frequency trading dashboard aggregating real-time data on ASIC miner profitability and coin metrics from multiple external APIs. Optimized frontend rendering to handle low-latency updates, ensuring miners have instant access to critical investment data without UI lag.",
+    link: "#",
+    type: "Fintech & Analytics",
+    role: "Full-Stack Developer",
+    techStack: [
+      "React",
+      "Redux",
+      "Next.js",
+      "Node.js",
+      "REST APIs",
+      "Third-party Data Feeds",
+    ],
   },
 ];
 
@@ -523,5 +542,24 @@ export const faqData: FAQ[] = [
     question: "What are your payment terms?",
     answer:
       "Payment terms may vary depending on the project scope and duration. Generally, I request an initial deposit before commencing work.",
+  },
+];
+
+export const linkedInPosts: linkedInPostTypes[] = [
+  {
+    id: 1,
+    embedId: "urn:li:share:7419451152368291844",
+  },
+  {
+    id: 2,
+    embedId: "urn:li:ugcPost:7419457465936732161",
+  },
+  {
+    id: 3,
+    embedId: "urn:li:share:7413133781160677376",
+  },
+  {
+    id: 4,
+    embedId: "urn:li:share:7408925884423991297",
   },
 ];
