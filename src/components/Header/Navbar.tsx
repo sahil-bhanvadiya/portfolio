@@ -45,30 +45,32 @@ export default function Navbar() {
   return (
     <>
       <nav className="p-6 border-b border-border-color">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-3">
           <AvailableForWorkBtn />
-          <div className="hidden md:flex items-center gap-3">
-            <p className="text-light-gray-2 font-medium">Local Time ( IST )</p>
-            <div className="bg-dark-gray-1 border-[rgb(24,24,26)] p-[14px_18px] w-[110px] rounded-xl flex items-center justify-center">
+          <div className="flex items-center justify-end gap-3">
+            <p className="hidden md:block text-light-gray-2 font-medium">
+              Local Time ( IST )
+            </p>
+            <div className="hidden md:flex bg-dark-gray-1 border-[rgb(24,24,26)] p-[14px_18px] w-[110px] rounded-xl items-center justify-center">
               <p className="text-light-gray-4 text-base leading-[1em] font-semibold tracking-[0.07em]">
                 {time}
               </p>
             </div>
+            <button
+              type="button"
+              onClick={toggleMenu}
+              aria-label="Toggle Menu"
+              className="h-11 w-11 rounded-full bg-almost-black hover:bg-dark-gray-4 border-dark-gray-4 transition-all duration-500 cursor-pointer md:hidden relative z-2000 flex items-center justify-center"
+            >
+              <span>
+                {isMenuOpen ? (
+                  <X size={24} className="text-light-gray-3" />
+                ) : (
+                  <Equal size={24} className="text-light-gray-3" />
+                )}
+              </span>
+            </button>
           </div>
-          <button
-            type="button"
-            onClick={toggleMenu}
-            aria-label="Toggle Menu"
-            className="h-11 w-11 rounded-full bg-almost-black hover:bg-dark-gray-4 border-dark-gray-4 transition-all duration-500 cursor-pointer md:hidden relative z-2000 flex items-center justify-center"
-          >
-            <span>
-              {isMenuOpen ? (
-                <X size={24} className="text-light-gray-3" />
-              ) : (
-                <Equal size={24} className="text-light-gray-3" />
-              )}
-            </span>
-          </button>
         </div>
       </nav>
       {/* SideNavbar for mobile*/}

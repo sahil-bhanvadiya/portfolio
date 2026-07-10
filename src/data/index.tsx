@@ -24,6 +24,8 @@ import {
   instagramIcon,
   jira,
   js,
+  langchain,
+  langgraph,
   linkedInIcon,
   linux,
   macos,
@@ -35,11 +37,13 @@ import {
   nodejs,
   notionIcon,
   openai,
+  pinecone,
   pm2,
   postgresql,
   postico,
   postman,
   rabbitmq,
+  rag,
   razorpay,
   react,
   redis,
@@ -57,10 +61,6 @@ import {
   vscode,
   webDesignIcon,
   webDevIcon,
-  langchain,
-  langgraph,
-  rag,
-  pinecone,
 } from "@/app/assets/assets";
 import type {
   counterListsType,
@@ -68,7 +68,6 @@ import type {
   linkedInPostTypes,
   myExperienceTypes,
   myServicesTypes,
-  myShowCasesTypes,
   myStackTypes,
   socialListsTypes,
   testimonialsTypes,
@@ -228,16 +227,26 @@ export const counterLists: counterListsType[] = [
 export const myExperience: myExperienceTypes[] = [
   {
     id: 1,
-    year: "2022 - Present",
+    year: "Feb 2026 - Present",
+    title: "Independent Contractor & Freelancer",
+    company: "Self-Employed",
+    description:
+      "Delivering full-stack development, AI integration, and cloud solutions for clients worldwide. Building scalable web applications, healthcare platforms, and intelligent systems on a project basis.",
+    link: "https://www.linkedin.com/in/sahil-bhanvadiya/",
+    linkText: "linkedin.com/in/sahil-bhanvadiya",
+  },
+  {
+    id: 2,
+    year: "2022 - Feb 2026",
     title: "Senior Software Engineer",
     company: "Seaflux",
     description:
-      "Leading full-stack development projects, mentoring junior developers, and collaborating with cross-functional teams to deliver high-quality software solutions.",
+      "Led full-stack development projects, mentored junior developers, and collaborated with cross-functional teams to deliver high-quality software solutions.",
     link: "https://www.seaflux.tech/",
     linkText: "seaflux.tech",
   },
   {
-    id: 2,
+    id: 3,
     year: "2021 - 2021",
     title: "Web Developer Intern",
     company: "CreArt",
@@ -247,7 +256,7 @@ export const myExperience: myExperienceTypes[] = [
     linkText: "creartsolutions.com",
   },
   {
-    id: 3,
+    id: 4,
     year: "2021 - 2021",
     title: "Summer Intern",
     company: "VNurture",
@@ -396,66 +405,7 @@ export const myServices: myServicesTypes[] = [
   },
 ];
 
-export const myShowCases: myShowCasesTypes[] = [
-  {
-    id: 1,
-    title: "AI-Powered Patient Triage System",
-    description:
-      "Architected and developed a secure, full-stack healthcare application to streamline patient intake and information management. Engineered a conversational AI agent using LangGraph for complex state management, enabling the system to perform intelligent patient triage, answer FAQs, and dynamically route patients to the correct medical resources.",
-    link: "#",
-    type: "Healthcare & AI",
-    role: "Full-Stack Developer & Project Manager",
-    techStack: [
-      "React",
-      "Next.js",
-      "Node.js",
-      "PostgreSQL",
-      "LangChain",
-      "LangGraph",
-      "LLM Integration",
-      "RAG",
-      "AWS",
-      "Socket.io",
-    ],
-  },
-  {
-    id: 2,
-    title: "Enterprise Healthcare Platform",
-    description:
-      "Architected a secure, cloud-based solution compliant with strict healthcare data standards, ensuring seamless interoperability between EMR and CHR modules. Implemented real-time data sharing and telehealth features, significantly reducing administrative friction and improving provider-patient care coordination.",
-    link: "#",
-    type: "Healthcare",
-    role: "Full-Stack Developer",
-    techStack: ["React", "Next.js", "Node.js", "PostgreSQL", "AWS", "Socket.io"],
-  },
-  {
-    id: 3,
-    title: "Innovative Event Management Platform",
-    description:
-      "Led the full-stack development of a multi-platform ecosystem (Web, Admin Panel, Mobile Apps), featuring complex tiered ticketing systems and staff-facing redemption tools. Engineered brand engagement tools and a pass redemption system that streamlined entry management and enhanced the attendee experience.",
-    link: "#",
-    type: "Event Management",
-    role: "Project Manager & Lead Full-Stack Developer",
-    techStack: ["React", "Next.js", "Node.js", "MongoDB", "AWS"],
-  },
-  {
-    id: 4,
-    title: "Crypto Mining Analytics Dashboard",
-    description:
-      "Developed a high-frequency trading dashboard aggregating real-time data on ASIC miner profitability and coin metrics from multiple external APIs. Optimized frontend rendering to handle low-latency updates, ensuring miners have instant access to critical investment data without UI lag.",
-    link: "#",
-    type: "Fintech & Analytics",
-    role: "Full-Stack Developer",
-    techStack: [
-      "React",
-      "Redux",
-      "Next.js",
-      "Node.js",
-      "REST APIs",
-      "Third-party Data Feeds",
-    ],
-  },
-];
+export { myShowCases } from "./case-studies";
 
 export const testimonials: testimonialsTypes[] = [
   {

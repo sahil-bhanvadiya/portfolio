@@ -1,0 +1,35 @@
+# Sahil Bhanvadiya Portfolio
+
+> Sahil Bhanvadiya is a senior full-stack engineer and freelance consultant specializing in React, Next.js, Node.js, TypeScript, healthcare AI, FHIR R4, LangGraph, LLM integration, and AWS. Available for contract work with US, EU, and global clients.
+
+This file helps AI systems find curated portfolio content, technical case studies, and contact information.
+
+## Portfolio
+
+- [Homepage](https://sahilbhanvadiya.vercel.app/): Experience, tech stack, featured projects, testimonials, FAQ, and contact options.
+- [Case Studies](https://sahilbhanvadiya.vercel.app/case-studies): Index of all technical case studies.
+
+## Case Studies
+
+- [AI-Powered Precision Medicine & Health Navigation Platform](https://sahilbhanvadiya.vercel.app/case-studies/precision-medicine-health-navigation-platform): Healthcare & AI. Role: Senior Full-Stack & AI Engineer. Designed FHIR R4-compliant data pipelines and a multi-agent LangGraph system to translate complex clinical records into plain-language, personalized treatment navigation for 500K+ medical records.
+- [AI Triage & Intake System for a Precision Wellness Platform](https://sahilbhanvadiya.vercel.app/case-studies/ai-powered-triage-wellness-platform): Healthcare & AI. Role: Full-Stack Developer & Project Manager. Architected a secure full-stack wellness platform with a LangGraph-powered AI triage agent, RAG-backed health coaching, and real-time Socket.io handoffs between patients and human coaches.
+- [Connected Enterprise EMR & Telehealth Platform](https://sahilbhanvadiya.vercel.app/case-studies/enterprise-emr-telehealth-platform): Healthcare. Role: Full-Stack Developer. Built a unified cloud healthcare platform linking EMR and CHR modules with real-time vitals monitoring, Socket.io messaging, and embedded telehealth for collaborative remote care.
+- [Multi-Platform Event Management & Brand Engagement Ecosystem](https://sahilbhanvadiya.vercel.app/case-studies/event-management-brand-engagement): Event Management. Role: Project Manager & Lead Full-Stack Developer. Led end-to-end development of a multi-platform event ecosystem with tiered ticketing, staff mobile redemption tools, and multi-tenant brand engagement across web, admin, and mobile apps.
+- [Real-Time Cryptocurrency Mining & Analytics Dashboard](https://sahilbhanvadiya.vercel.app/case-studies/crypto-mining-analytics-dashboard): Fintech & Analytics. Role: Full-Stack Developer. Built a high-frequency mining analytics dashboard with a Node.js data aggregation engine and optimized React/Redux frontend for zero-lag profitability tracking across live market feeds.
+- [Enterprise Suite for International Credential Evaluation](https://sahilbhanvadiya.vercel.app/case-studies/international-credential-evaluation): EdTech. Role: Lead Full-Stack Architect. Led architecture of three interconnected EdTech SaaS products—a global evaluation database, secure document sharing portal, and algorithmic GPA conversion engine serving 200+ countries.
+- [AI-Powered Construction Market Intelligence & Sales Automation](https://sahilbhanvadiya.vercel.app/case-studies/construction-market-intelligence-ai): Enterprise SaaS & AI. Role: Senior Full-Stack & AI Engineer. Engineered an AI-powered construction intelligence platform processing 12,500+ daily market updates across 180K+ projects with LangGraph agent orchestration and integrated sales automation.
+- [High-Performance Digital Real Estate Platform](https://sahilbhanvadiya.vercel.app/case-studies/digital-real-estate-platform): Real Estate. Role: Full-Stack Developer. Developed a high-traffic real estate platform for a major regional brokerage with 15-minute listing sync, advanced property search, and a unified franchise ecosystem serving 1,500+ agents.
+- [Building a Community-Centric Local Deals & Business Promotion Platform](https://sahilbhanvadiya.vercel.app/case-studies/local-deals-marketplace-platform): E-commerce & Local Advertising. Role: Full-Stack Developer. Built a dual-sided marketplace with frictionless mobile coupon browsing for shoppers and a streamlined vendor SaaS dashboard for local businesses to publish promotions without sign-up barriers.
+- [B2B InsurTech Platform for Commercial Quoting & Broker Automation](https://sahilbhanvadiya.vercel.app/case-studies/insurtech-commercial-quoting-platform): InsurTech. Role: Senior Full-Stack Engineer. Engineered a B2B InsurTech SaaS platform replacing manual PDF workflows with dynamic smart applications, real-time multi-carrier quote aggregation, and automated coverage comparison for insurance brokers.
+
+## Contact & Profiles
+
+- [LinkedIn](https://www.linkedin.com/in/sahil-bhanvadiya/): Professional profile and posts.
+- [GitHub](https://github.com/sahil-bhanvadiya): Open source and code samples.
+- [Resume PDF](https://sahilbhanvadiya.vercel.app/Sahil_Bhanvadiya_Resume.pdf): Downloadable resume.
+- Email: sahil.bhanvadiya.dev@gmail.com
+
+## Optional
+
+- [Sitemap](https://sahilbhanvadiya.vercel.app/sitemap.xml): Full site map for crawlers.
+- [Robots](https://sahilbhanvadiya.vercel.app/robots.txt): Crawler rules.

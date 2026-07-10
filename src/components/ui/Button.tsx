@@ -1,10 +1,9 @@
 import clsx from "clsx";
 import type React from "react";
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: React.ReactNode;
   title: string;
-  onClick?: () => void;
   position?: "left" | "right";
   href?: string;
   className?: string;
@@ -16,11 +15,13 @@ export default function Button({
   position = "left",
   className = "",
   onClick,
+  ...rest
 }: ButtonProps) {
   return (
     <button
       type="button"
       onClick={onClick}
+      {...rest}
       className={clsx(
         "bg-almost-black hover:bg-dark-gray-4 transition-all duration-300 rounded-[10px] border border-dark-gray-4 flex gap-[6px] cursor-pointer items-center flex-nowrap justify-center overflow-visible p-[14px_18px] relative group",
         position === "left" ? "flex-row" : "flex-row-reverse",

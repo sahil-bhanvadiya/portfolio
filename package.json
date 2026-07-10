@@ -10,6 +10,8 @@
     "url": "git+https://github.com/sahil-bhanvadiya/portfolio.git"
   },
   "scripts": {
+    "generate:llms-txt": "npx tsx scripts/generate-llms-txt.ts",
+    "prebuild": "npm run generate:llms-txt",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

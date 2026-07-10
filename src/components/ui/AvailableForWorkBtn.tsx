@@ -1,22 +1,22 @@
-const greenColor: string = "#6dd33d";
+import Link from "next/link";
+
+const greenColor = "#6dd33d";
 
 export default function AvailableForWorkBtn() {
   return (
-    <button
-      type="button"
-      className="h-11 px-4 rounded-3xl bg-dark-gray-3 border border-border-color"
+    <Link
+      href="#contact"
+      className="inline-flex items-center justify-center gap-2.5 h-11 px-4 rounded-3xl bg-dark-gray-3 border border-border-color hover:bg-dark-gray-4 transition-colors duration-300 whitespace-nowrap"
     >
-      <div className="flex items-center justify-center gap-3">
-        <div
-          className="h-2 w-2 relative flex items-center justify-center rounded-full"
-          style={{ backgroundColor: greenColor }}
-        >
-          <div className="absolute w-3 h-3 rounded-full bg-green-400/30 animate-ping  pointer-events-none"></div>
-        </div>
-        <span className="text-sm shrink-0 text-light-gray-3">
-          Available For Work
-        </span>
-      </div>
-    </button>
+      <span
+        className="h-2 w-2 relative flex items-center justify-center rounded-full shrink-0"
+        style={{ backgroundColor: greenColor }}
+      >
+        <span className="absolute w-3 h-3 rounded-full bg-green-400/30 animate-ping pointer-events-none" />
+      </span>
+      <span className="text-sm font-medium text-light-gray-3">
+        Available for work
+      </span>
+    </Link>
   );
 }

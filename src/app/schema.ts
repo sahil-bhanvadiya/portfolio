@@ -9,7 +9,7 @@ export const personSchema = {
     "https://www.linkedin.com/in/sahil-bhanvadiya",
     "https://x.com/sahil_bhanvadia",
   ],
-  jobTitle: "Full Stack Developer",
+  jobTitle: "Senior Full-Stack Engineer & Freelance Consultant",
   worksFor: {
     "@type": "Organization",
     name: "Independent Contractor",
@@ -130,7 +130,7 @@ export const reviewSchema = {
     url: "https://sahilbhanvadiya.vercel.app/",
   },
   category: "Software Development",
-  url: "https://sahilbhanvadiya.vercel.app/services",
+  url: "https://sahilbhanvadiya.vercel.app/",
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",

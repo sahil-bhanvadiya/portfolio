@@ -5,8 +5,9 @@ import { AvatarMe, handGif } from "@/app/assets/assets";
 import Brandcontainer from "../Brandcontainer/Brandcontainer";
 import CounterContainer from "../CounterContainer/CounterContainer";
 import EmailMeButton from "../EmailMeButton";
-import ScheduleButton from "../ui/ScheduleButton";
+import FreelanceAvailability from "../FreelanceAvailability/FreelanceAvailability";
 import ResumeButton from "../ResumeButton";
+import ScheduleButton from "../ui/ScheduleButton";
 
 export default function Hero() {
   return (
@@ -91,9 +92,9 @@ export default function Hero() {
             viewport={{ once: true }}
             className="text-[18px] text-light-gray-2 font-medium leading-[150%] mb-4"
           >
-            Full-stack developer with a passion for building scalable,
-            high-performance web applications and creating seamless user
-            experiences.
+            Senior full-stack engineer and freelance consultant building
+            scalable web apps, healthcare AI platforms, and cloud-native systems
+            for teams worldwide.
           </motion.p>
 
           <motion.div
@@ -139,6 +140,7 @@ export default function Hero() {
         <Brandcontainer />
         {/* bottom  */}
         <CounterContainer />
+        <FreelanceAvailability />
       </motion.div>
     </div>
   );

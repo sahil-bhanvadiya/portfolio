@@ -40,12 +40,40 @@ export interface myServicesTypes {
 }
 export interface myShowCasesTypes {
   id: number;
+  slug: string;
   title: string;
   description: string;
-  link: string;
   type: string;
   role: string;
   techStack: string[];
+}
+
+export interface CaseStudySolutionSection {
+  title: string;
+  content: string;
+}
+
+export interface CaseStudyLink {
+  label: string;
+  url: string;
+}
+
+export interface CaseStudy {
+  slug: string;
+  title: string;
+  description: string;
+  type: string;
+  role: string;
+  techStack: string[];
+  client?: string;
+  domain?: string;
+  overview: string;
+  challengeIntro?: string;
+  challengePoints: string[];
+  solutionSections: CaseStudySolutionSection[];
+  results: string[];
+  takeaways?: string;
+  links?: CaseStudyLink[];
 }
 
 export interface testimonialsTypes {
